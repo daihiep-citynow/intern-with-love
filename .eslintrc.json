@@ -1,3 +1,40 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["prettier", "import", "react"],
+  "rules": {
+    "prettier/prettier": "error", // prettier-ignore
+    "import/no-unresolved": "error", // turn on errors for missing imports
+    "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
+    "react/react-in-jsx-scope": "off", // turn off for now
+    "react/jsx-props-no-spreading": [
+      "off",
+      { "custom": "ignore" },
+      { "html": "ignore", "custom": "ignore", "explicitSpread": "ignore" }
+    ],
+    "no-use-before-define": "error", // turn on errors for missing imports
+    "import/order": [
+      2,
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ], // define order of imports
+    "import/newline-after-import": "warn", // turn on errors for missing imports
+    "quotes": ["error", "double", { "avoidEscape": true }], // turn on checking for quotes in jsx is double quotes
+    "react/prop-types": "off" // turn off for now
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }
