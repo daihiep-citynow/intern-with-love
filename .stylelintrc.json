@@ -4,6 +4,7 @@
     ],
     "extends": "stylelint-config-recommended",
     "rules": {
+        "prettier/prettier": true,
         "comment-empty-line-before": "always",
         "block-no-empty": true,
         "no-eol-whitespace": true,
