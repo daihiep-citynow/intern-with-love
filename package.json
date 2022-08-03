@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "npx prettier --write \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
-    "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\""
+    "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.2.3",
@@ -30,13 +31,14 @@
     "prettier": "2.7.1"
   },
   "lint-staged": {
-    "*.*": [
-      "npm run prettier:check"
+    "**/*": [
+      "prettier --write --ignore-unknown",
+      "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier:check"
+      "pre-commit": "lint-staged"
     }
   }
 }
