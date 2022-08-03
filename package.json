@@ -11,7 +11,8 @@
     "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "stylelint": "npx stylelint '*.{js,jsx,ts,tsx}' --config .stylelintrc.json --fix"
   },
   "dependencies": {
     "next": "12.2.3",
@@ -55,7 +56,6 @@
   "lint-staged": {
     "*.{js, jsx}": [
       "prettier --write --ignore-unknown",
-      "stylelint --fix",
       "git add ."
     ],
     "*.{css, scss}": [
@@ -70,8 +70,7 @@
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-standard-scss",
-      "stylelint-config-prettier-scss"
+      "stylelint-config-standard-scss"
     ]
   }
 }
