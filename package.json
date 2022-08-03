@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "echo \"[Husky] pre-commit\"",
       "pre-push": "npm run test"
     }
   }
