@@ -66,10 +66,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-standard-scss"
-    ]
   }
 }
