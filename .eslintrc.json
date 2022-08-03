@@ -27,10 +27,7 @@
     "import/newline-after-import": "warn", // turn on errors for missing imports
     "quotes": ["error", "double", { "avoidEscape": true }], // turn on checking for quotes in jsx is double quotes
     "react/prop-types": "off", // turn off for now
-    "import/no-extraneous-dependencies": [
-      "error",
-      { "devDependencies": false, "optionalDependencies": false, "peerDependencies": false }
-    ]
+    "import/no-extraneous-dependencies": "off"
   },
   "settings": {
     "import/resolver": {

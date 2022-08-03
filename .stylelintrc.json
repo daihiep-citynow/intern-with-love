@@ -9,7 +9,8 @@
         "color-hex-case": "lower",
         "unit-allowed-list": [
             "em",
-            "rem"
+            "rem",
+            "%"
         ],
         "color-no-invalid-hex": [
             true,

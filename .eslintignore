@@ -17,6 +17,7 @@
 .DS_Store
 *.pem
 
+storybook-static
 # debug
 npm-debug.log*
 yarn-debug.log*
