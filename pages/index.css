@@ -9,5 +9,6 @@
   background-color: #f5f5f5;
 }
 
-.wrapperInner {
+.wrapper-inner {
+  display: block;
 }
