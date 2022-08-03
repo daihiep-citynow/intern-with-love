@@ -59,7 +59,7 @@
       "git add ."
     ],
     "*.{css, scss}": [
-      "stylelint",
+      "stylelint --fix",
       "git add ."
     ]
   },
