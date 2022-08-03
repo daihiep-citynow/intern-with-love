@@ -11,8 +11,7 @@
     "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "stylelint": "npx stylelint '*.{js,jsx,ts,tsx}' --config .stylelintrc.json --fix"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "next": "12.2.3",
