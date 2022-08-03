@@ -57,7 +57,8 @@
   },
   "lint-staged": {
     "*.{js, jsx}": [
-      "prettier --write --ignore-unknown",
+      "eslint --fix --quiet",
+      "prettier --write --ignore-unknown ",
       "git add ."
     ],
     "*.{css, scss}": [
