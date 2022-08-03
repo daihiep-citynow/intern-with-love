@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
-  "plugins": ["prettier", "import", "react", "stylelint-prettier"],
+  "plugins": ["prettier", "import", "react"],
   "rules": {
     "prettier/prettier": ["error",
     {
