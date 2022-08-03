@@ -58,11 +58,11 @@
   "lint-staged": {
     "*.{js, jsx}": [
       "prettier --write --ignore-unknown",
-      "git add"
+      "git add ."
     ],
     "*.{css, scss}": [
       "stylelint --fix",
-      "git add"
+      "git add ."
     ]
   },
   "husky": {
