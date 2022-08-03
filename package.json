@@ -10,7 +10,7 @@
     "prettier": "npx prettier --write \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
     "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./components/**/*.jsx\" \"./pages/**/*.scss\" \"./components/**/*.scss\"",
     "prepare": "husky install",
-    "stylelint": "npx stylelint \"./pages/*.scss\" \"./components/*.scss\"",
+    "stylelint": "npx stylelint \"./pages/*.css\" \"./components/*.css\"",
     "lint-check-all": "npm run lint && npm run prettier:check && npm run stylelint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
