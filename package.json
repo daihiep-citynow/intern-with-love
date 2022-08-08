@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "npx prettier --write \"./pages/**/*.jsx\" \"./src/**/*.jsx\" \"./pages/**/*.scss\" \"./src/**/*.scss\"",
-    "prettier:check": "prettier --config .prettierrc.json --check \"./pages/**/*.jsx\" \"./src/**/*.jsx\" \"./pages/**/*.scss\" \"./src/**/*.scss\"",
+    "prettier": "npx prettier --write .",
+    "prettier:check": "prettier --config .prettierrc.json --check .",
     "prepare": "husky install",
-    "stylelint": "npx stylelint \"./pages/*.css\" \"./src/*.css\"",
-    "lint-check-all": "npm run lint && npm run prettier:check && npm run stylelint",
+    "stylelint": "npx stylelint \"**/*.css\" --fix",
+    "lint-check-all": "npm run lint && prettier && npm run stylelint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -59,11 +59,11 @@
   },
   "lint-staged": {
     "*.{js, jsx}": [
-      "prettier --write --ignore-unknown ",
+      "npm run prettier",
       "git add ."
     ],
     "*.{css, scss}": [
-      "stylelint --fix",
+      "npm run stylelint",
       "git add ."
     ]
   },
