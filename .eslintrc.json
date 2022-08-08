@@ -1,19 +1,29 @@
 {
   "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
-  "plugins": ["prettier", "import", "react"],
+  "plugins": ["prettier", "import", "react", "prefer-arrow"],
   "rules": {
-    "prettier/prettier": ["error",
-    {
-      "singleQuote": false,
-      "parser": "flow",
-      "endOfLine": "auto"
-    }
-], // prettier-ignore
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": false,
+        "parser": "flow",
+        "endOfLine": "auto"
+      }
+    ],
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": true,
+        "classPropertiesAllowed": false
+      }
+    ],
     "import/no-unresolved": "error", // turn on errors for missing imports
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
     "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "error", // turn on errors for missing imports
+    "prefer-arrow-callback": "error",
     "import/order": [
       2,
       {
