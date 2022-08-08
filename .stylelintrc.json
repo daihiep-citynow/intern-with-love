@@ -4,7 +4,14 @@
     ],
     "extends": "stylelint-config-recommended",
     "rules": {
-        "prettier/prettier": true,
+        "prettier/prettier": [
+            true,
+            {
+                "singleQuote": true,
+                "trailingComma": "all",
+                "endOfLine": "auto"
+            }
+        ],
         "comment-empty-line-before": "always",
         "block-no-empty": true,
         "no-eol-whitespace": true,
