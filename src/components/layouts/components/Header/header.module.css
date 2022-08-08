@@ -1,0 +1,7 @@
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  background-color: yellow;
+  z-index: 10;
+}

@@ -2,10 +2,11 @@
   "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
   "plugins": ["prettier", "import", "react"],
   "rules": {
-    "prettier/prettier": ["error",
+    "prettier/prettier": ["off",
     {
       "singleQuote": false,
-      "parser": "flow"
+      "parser": "flow",
+      "endOfLine": "auto"
     }
 ], // prettier-ignore
     "import/no-unresolved": "error", // turn on errors for missing imports
@@ -27,7 +28,8 @@
     "import/newline-after-import": "warn", // turn on errors for missing imports
     "quotes": ["error", "double", { "avoidEscape": true }], // turn on checking for quotes in jsx is double quotes
     "react/prop-types": "off", // turn off for now
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "linebreak-style": "off"
   },
   "settings": {
     "import/resolver": {

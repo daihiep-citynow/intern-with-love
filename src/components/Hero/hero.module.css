@@ -1,0 +1,5 @@
+.hero-wrapper {
+  height: var(--hero-height);
+  top: calc(var(--header-height) + 16px);
+  background-color: rgb(173, 173, 228);
+}
