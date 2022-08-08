@@ -7,7 +7,7 @@
         "prettier/prettier": [
             true,
             {
-                "singleQuote": true,
+                "singleQuote": false,
                 "trailingComma": "all",
                 "endOfLine": "auto"
             }

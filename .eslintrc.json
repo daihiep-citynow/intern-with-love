@@ -2,7 +2,7 @@
   "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
   "plugins": ["prettier", "import", "react"],
   "rules": {
-    "prettier/prettier": ["off",
+    "prettier/prettier": ["error",
     {
       "singleQuote": false,
       "parser": "flow",
@@ -12,11 +12,7 @@
     "import/no-unresolved": "error", // turn on errors for missing imports
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
-    "react/jsx-props-no-spreading": [
-      "off",
-      { "custom": "ignore" },
-      { "html": "ignore", "custom": "ignore", "explicitSpread": "ignore" }
-    ],
+    "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "error", // turn on errors for missing imports
     "import/order": [
       2,
