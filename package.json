@@ -59,11 +59,12 @@
   },
   "lint-staged": {
     "*.{js, jsx}": [
-      "npm run prettier",
+      "eslint --cache --fix",
+      "npx prettier --write .",
       "git add ."
     ],
     "*.{css, scss}": [
-      "npm run stylelint",
+      "npx stylelint --fix",
       "git add ."
     ]
   },
