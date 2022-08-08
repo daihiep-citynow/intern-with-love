@@ -1,0 +1,5 @@
+.footer-wrapper {
+  height: var(--footer-height);
+  background-color: rgb(117, 81, 81);
+  margin-top: calc(var(--header-height) + 16px);
+}
