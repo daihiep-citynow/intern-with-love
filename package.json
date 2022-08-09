@@ -13,6 +13,9 @@
     "stylelint": "npx stylelint \"**/*.css\" --fix",
     "lint-check-all": "npm run lint && prettier && npm run stylelint",
     "storybook": "start-storybook -p 6006",
+    "homepage": "http://daihiep-citynow.github.io/intern-with-love",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -43,6 +46,7 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-storybook": "^0.6.2",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "normalize.css": "^8.0.1",
