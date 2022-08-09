@@ -13,7 +13,7 @@
     "stylelint": "npx stylelint \"**/*.css\" --fix",
     "lint-check-all": "npm run lint && prettier && npm run stylelint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "dependencies": {
     "next": "12.2.3",
