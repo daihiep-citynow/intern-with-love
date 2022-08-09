@@ -1,5 +1,82 @@
+:root {
+  --header-height: 56px;
+  --hero-height: 420px;
+  --footer-height: 700px;
+}
+
 body {
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   box-sizing: border-box;
   overflow: auto;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* layout */
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  grid-area: header;
+  background-color: aquamarine;
+  border-bottom: 1px solid black;
+}
+
+.hero-wrapper {
+  margin-top: var(--header-height);
+  grid-area: hero;
+  height: 420px;
+  background-color: aquamarine;
+}
+
+.left-wrapper {
+  grid-area: left;
+  height: 1000px;
+  background-color: aquamarine;
+}
+
+.right-wrapper {
+  grid-area: right;
+  background-color: aquamarine;
+}
+
+.footer-wrapper {
+  grid-area: footer;
+  height: 700px;
+  background-color: aquamarine;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header"
+    "hero hero hero hero hero hero hero"
+    "left left left left left right right"
+    "footer footer footer footer footer footer footer";
+  gap: 1rem;
+  max-width: 1170px;
+  margin: 0 auto;
 }
