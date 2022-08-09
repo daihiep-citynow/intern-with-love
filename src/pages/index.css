@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Baloo 2", cursive;
   box-sizing: border-box;
   overflow: auto;
 }

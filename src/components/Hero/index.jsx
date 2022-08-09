@@ -1,7 +1,3 @@
-const Hero = () => {
-  <div className="hero">
-    <h1>Hero</h1>
-  </div>;
-};
+const Hero = () => <div className="hero-wrapper" />;
 
 export default Hero;

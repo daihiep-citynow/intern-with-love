@@ -18,6 +18,14 @@
         "classPropertiesAllowed": false
       }
     ],
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "object-curly-newline": "off",
     "import/no-unresolved": "error", // turn on errors for missing imports
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
