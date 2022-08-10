@@ -43,7 +43,15 @@
     "quotes": ["error", "double", { "avoidEscape": true }], // turn on checking for quotes in jsx is double quotes
     "react/prop-types": "off", // turn off for now
     "import/no-extraneous-dependencies": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

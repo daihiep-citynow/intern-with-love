@@ -9,6 +9,10 @@ const nextConfig = {
     config.plugins.push(new StylelintPlugin());
     return config;
   },
+
+  images: {
+    domains: ["stc-id.nixcdn.com"],
+  },
 };
 
 module.exports = nextConfig;

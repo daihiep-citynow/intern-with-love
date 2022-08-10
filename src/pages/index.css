@@ -42,8 +42,7 @@ body {
   width: 100%;
   height: var(--header-height);
   grid-area: header;
-  background-color: aquamarine;
-  border-bottom: 1px solid black;
+  border-bottom: #dadada solid 1px;
 }
 
 .hero-wrapper {

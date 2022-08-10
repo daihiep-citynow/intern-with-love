@@ -1,3 +1,8 @@
-.header {
-  border: 1px solid black;
+.header-wrapper-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
 }
