@@ -1,3 +1,22 @@
 .header-nav-wrapper {
-  display: inline;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: -2px;
+}
+
+.header-nav-item ~ .header-nav-item {
+  margin-left: 1rem;
+}
+
+.header-nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
