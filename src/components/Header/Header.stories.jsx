@@ -10,5 +10,5 @@ const Template = (args) => <Header {...args} />;
 export const HeaderBeta = Template.bind({});
 HeaderBeta.args = {
   primary: "header",
-  label: "HeaderBeta",
+  label: "Header",
 };
