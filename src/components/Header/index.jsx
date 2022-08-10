@@ -9,12 +9,17 @@ import styles from "./Header.module.css";
 const Header = () => (
   <header className="header-wrapper">
     <div className={styles["header-wrapper-inner"]}>
-      <HeaderLogo />
-      <HeaderBeta />
-      <HeaderNav />
-      <HeaderSearch />
-      <HeaderButton />
-      <HeaderLogin />
+      <div className={styles["header-wrapper-left"]}>
+        <HeaderLogo />
+        <HeaderBeta />
+        <HeaderNav />
+      </div>
+      <div className={styles["header-wrapper-right"]}>
+        <HeaderSearch />
+        <HeaderButton />
+        <div className={styles["header-divider"]} />
+        <HeaderLogin />
+      </div>
     </div>
   </header>
 );
