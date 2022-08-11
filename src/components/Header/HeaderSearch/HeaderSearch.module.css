@@ -27,3 +27,31 @@
   outline: none;
   background-color: transparent;
 }
+
+.header-search-input-wrapper {
+  position: relative;
+}
+
+.header-search-state {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  color: #a7a7ab;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.header-search-result-items {
+  margin-right: 22px;
+  width: 196px;
+  max-height: 200px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%);
+  overflow-y: auto;
+}
+
+.header-search-result-item {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.8rem;
+}

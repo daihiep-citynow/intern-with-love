@@ -76,13 +76,14 @@ ul {
   height: var(--header-height);
   grid-area: header;
   border-bottom: #dadada solid 1px;
+  z-index: 9999;
 }
 
 .hero-wrapper {
   margin-top: var(--header-height);
   grid-area: hero;
   height: 420px;
-  background-color: aquamarine;
+  max-width: 1170px;
 }
 
 .left-wrapper {

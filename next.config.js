@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["stc-id.nixcdn.com"],
+    domains: ["stc-id.nixcdn.com", "avatar-ex-swe.nixcdn.com"],
   },
 
   // eslint-disable-next-line

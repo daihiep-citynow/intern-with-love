@@ -30,8 +30,6 @@
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
     "react/jsx-props-no-spreading": "off",
-    "no-use-before-define": "error", // turn on errors for missing imports
-    "prefer-arrow-callback": "error",
     "import/order": [
       2,
       {
