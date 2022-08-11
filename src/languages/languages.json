@@ -1,16 +1,24 @@
-[
-  {
-    "title": "English",
-    "value": "en",
-    "words": {
-      "title": "Hello World"
-    }
+{
+  "vi": {
+    "title": "Vietnamese",
+    "songs": "Bài hát",
+    "playlist": "Playlist",
+    "trendy": "Tuyển tập",
+    "video": "Video",
+    "rank": "BXH",
+    "topic": "Chủ đề",
+    "search": "Tìm kiếm",
+    "top": "Top 100"
   },
-  {
-    "title": "Tiếng Việt",
-    "value": "vi",
-    "words": {
-      "title": "Xin chào thế giới"
-    }
+  "en": {
+    "title": "English",
+    "songs": "Songs",
+    "playlist": "Playlist",
+    "trendy": "Trendy",
+    "video": "Video",
+    "rank": "Rank",
+    "topic": "Topic",
+    "search": "Search",
+    "top": "Top 100"
   }
-]
+}

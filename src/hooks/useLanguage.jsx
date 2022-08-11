@@ -5,9 +5,12 @@ import languages from "../languages/languages.json";
 const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [currentLanguage, setCurrentLanguage] = useState(() => Object.keys(languages)[0] || "en");
 
-  const value = useMemo(() => ({ language, setLanguage }), [language, setLanguage]);
+  const value = useMemo(
+    () => ({ currentLanguage, setCurrentLanguage }),
+    [currentLanguage, setCurrentLanguage],
+  );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
