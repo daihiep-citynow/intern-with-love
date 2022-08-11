@@ -1,0 +1,16 @@
+[
+  {
+    "title": "English",
+    "value": "en",
+    "words": {
+      "title": "Hello World"
+    }
+  },
+  {
+    "title": "Tiếng Việt",
+    "value": "vi",
+    "words": {
+      "title": "Xin chào thế giới"
+    }
+  }
+]

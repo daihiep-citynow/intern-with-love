@@ -1,5 +1,7 @@
 import { useState, createContext, useMemo } from "react";
 
+import languages from "../languages/languages.json";
+
 const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
@@ -10,4 +12,4 @@ const LanguageProvider = ({ children }) => {
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
 
-export default { LanguageContext, LanguageProvider };
+export default { LanguageContext, LanguageProvider, languages };
