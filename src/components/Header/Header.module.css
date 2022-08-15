@@ -1,3 +1,26 @@
-.header {
-  border: 1px solid black;
+.header-wrapper-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header-wrapper-inner > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-divider {
+  width: 1px;
+  height: 24px;
+  background-color: rgba(0 0 0 / 20%);
+}
+
+.header-wrapper-left > div,
+.header-wrapper-right > div {
+  margin-left: 12px;
 }

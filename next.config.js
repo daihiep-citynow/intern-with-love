@@ -3,6 +3,9 @@ const StylelintPlugin = require("stylelint-webpack-plugin"); // eslint-disable-l
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ["stc-id.nixcdn.com", "avatar-ex-swe.nixcdn.com"],
+  },
 
   // eslint-disable-next-line
   webpack: (config, options) => {

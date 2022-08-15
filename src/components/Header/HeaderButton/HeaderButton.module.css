@@ -1,0 +1,21 @@
+.header-button-wrapper {
+  display: flex;
+}
+
+.header-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+}
+
+.header-button-icon ~ .header-button-icon {
+  margin-left: 16px;
+}
+
+.header-button-icon span svg {
+  height: 22px;
+  width: 22px;
+  color: #2daaed;
+}
