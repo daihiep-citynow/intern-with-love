@@ -1,6 +1,11 @@
 {
-  "plugins": ["stylelint-prettier"],
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
   "rules": {
     "prettier/prettier": [
       true,
@@ -16,7 +21,15 @@
     "comment-no-empty": true,
     "at-rule-name-case": "lower",
     "color-hex-case": "lower",
-    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh"],
+    "unit-allowed-list": [
+      "em",
+      "rem",
+      "%",
+      "px",
+      "vw",
+      "vh",
+      "deg"
+    ],
     "color-no-invalid-hex": [
       true,
       {
@@ -28,7 +41,9 @@
     "selector-pseudo-class-no-unknown": [
       true,
       {
-        "ignorePseudoClasses": ["global"]
+        "ignorePseudoClasses": [
+          "global"
+        ]
       }
     ],
     "max-empty-lines": 1
