@@ -95,7 +95,6 @@ ul {
 
 .right-wrapper {
   grid-area: right;
-  background-color: aquamarine;
 }
 
 .footer-wrapper {
@@ -106,10 +105,10 @@ ul {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header header"
-    "hero hero hero hero hero hero hero"
-    "left left left left left right right"
-    "footer footer footer footer footer footer footer";
+    "header header header header header header header header header header"
+    "hero hero hero hero hero hero hero hero hero hero"
+    "left left left left left left left left right right"
+    "footer footer footer footer footer footer footer footer footer footer";
   gap: 1rem;
   max-width: 1170px;
   margin: 0 auto;

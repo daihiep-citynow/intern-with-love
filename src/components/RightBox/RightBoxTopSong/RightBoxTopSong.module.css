@@ -1,0 +1,52 @@
+.right-box-top-song {
+  border: 1px solid black;
+}
+
+.right-box-title {
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.right-box-text {
+  cursor: pointer;
+  color: #2daaed;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+.right-box-icon {
+  color: #7a7a7a;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.right-box-nav {
+  display: flex;
+  margin-top: 10px;
+}
+
+.right-box-nav-item {
+  width: 33.3%;
+  height: 30px;
+  text-align: center;
+  background-color: #e5e5e5;
+  line-height: 30px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.right-box-nav-item-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.right-box-nav-item-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.right-box-nav-item-active {
+  background-color: red;
+  color: #fff;
+}
