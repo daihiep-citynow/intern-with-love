@@ -54,8 +54,6 @@ const navLinks = [
   },
 ];
 
-// eslint-disable-next-line no-unused-vars
-
 const HeaderNav = () => {
   const { currentLanguage } = useContext(useLanguage.LanguageContext);
   const { languages } = useLanguage;

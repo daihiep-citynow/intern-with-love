@@ -15,4 +15,9 @@ const LanguageProvider = ({ children }) => {
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
 
-export default { LanguageContext, LanguageProvider, languages };
+export default {
+  LanguageContext,
+  LanguageProvider,
+  languages,
+  languagesList: Object.keys(languages),
+};

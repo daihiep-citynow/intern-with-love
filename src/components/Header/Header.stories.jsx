@@ -5,10 +5,6 @@ export default {
   component: Header,
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = () => <Header />;
 
-export const HeaderBeta = Template.bind({});
-HeaderBeta.args = {
-  primary: "header",
-  label: "Header",
-};
+export const HeaderWrapper = Template.bind({});
