@@ -15,7 +15,8 @@
 body {
   font-family: var(--primary-font), sans-serif;
   box-sizing: border-box;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 html,
@@ -100,7 +101,6 @@ ul {
 .footer-wrapper {
   grid-area: footer;
   height: 700px;
-  background-color: aquamarine;
 }
 
 .grid-container {
@@ -113,4 +113,9 @@ ul {
   gap: 1rem;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.full-width {
+  margin-left: calc(-100vw / 2 + 1170px / 2);
+  margin-right: calc(-100vw / 2 + 1170px / 2);
 }
