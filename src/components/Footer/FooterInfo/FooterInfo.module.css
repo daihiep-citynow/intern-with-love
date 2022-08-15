@@ -1,0 +1,10 @@
+.footer-info-wrapper {
+  height: 488px;
+  background-color: #f5f5f5;
+}
+
+.footer-info-inner {
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}

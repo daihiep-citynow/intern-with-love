@@ -16,7 +16,7 @@
     "comment-no-empty": true,
     "at-rule-name-case": "lower",
     "color-hex-case": "lower",
-    "unit-allowed-list": ["em", "rem", "%", "px"],
+    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh"],
     "color-no-invalid-hex": [
       true,
       {
