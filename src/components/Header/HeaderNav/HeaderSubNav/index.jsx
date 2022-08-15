@@ -1,4 +1,4 @@
-import { useContext, useMemo } from "react";
+import { useContext } from "react";
 
 import { useLanguage } from "../../../../hooks";
 
@@ -7,10 +7,7 @@ import styles from "./HeaderSubNav.module.css";
 export const HeaderSubNavLanguage = () => {
   // eslint-disable-next-line no-unused-vars
   const { currentLanguage, setCurrentLanguage } = useContext(useLanguage.LanguageContext);
-  const { languages } = useLanguage;
-
-  // get all key in languages
-  const languageKeys = useMemo(() => Object.keys(languages), [languages]);
+  const { languagesList } = useLanguage;
 
   const handleChangeLanguage = (language) => {
     setCurrentLanguage(language);
@@ -18,14 +15,14 @@ export const HeaderSubNavLanguage = () => {
 
   return (
     <div>
-      {languageKeys.map((languageKey) => (
+      {languagesList.map((languageKey) => (
         <div
           className={styles["header-sub-nav-language-item"]}
           key={languageKey}
           onClick={() => handleChangeLanguage(languageKey)}
           aria-hidden="true"
         >
-          {languages[languageKey].title}
+          {languageKey}
         </div>
       ))}
     </div>
