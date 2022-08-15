@@ -33,6 +33,16 @@
   cursor: pointer;
 }
 
+.footer-info-icons span {
+  margin-right: 1.6rem;
+  font-size: 32px;
+}
+
+.footer-info-logos span {
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+}
+
 .footer-info-top-items span:hover {
   color: #00f;
 }

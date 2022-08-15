@@ -1,5 +1,4 @@
 .footer-info-wrapper {
-  height: 488px;
   background-color: #f5f5f5;
 }
 
@@ -12,7 +11,11 @@
 .footer-divider {
   width: 100%;
   height: 1px;
-  float: left;
   background-color: #ccc;
   margin: 40px 0;
+}
+
+.footer-info-text-title {
+  text-transform: uppercase;
+  font-weight: 700;
 }

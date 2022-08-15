@@ -1,4 +1,5 @@
-import { FacebookOutlined } from "@ant-design/icons";
+import { FacebookFilled, InstagramFilled, SkypeFilled } from "@ant-design/icons";
+import Image from "next/image";
 
 import styles from "./FooterInfoTop.module.css";
 
@@ -39,7 +40,26 @@ const FooterInfoTop = () => (
       </div>
       <div className={styles["footer-info-top-title-sub"]}>kết nối với chúng tôi</div>
       <div className={styles["footer-info-icons"]}>
-        <FacebookOutlined />
+        <FacebookFilled />
+        <InstagramFilled />
+        <SkypeFilled />
+      </div>
+      <div className={styles["footer-info-logos"]}>
+        <Image
+          src="https://stc-id.nixcdn.com/v11/images/footer/t_google_play.png"
+          height="32px"
+          width="108px"
+        />
+        <Image
+          src="https://stc-id.nixcdn.com/v11/images/footer/t_app_store.png"
+          height="32px"
+          width="108px"
+        />
+        <Image
+          src="https://stc-id.nixcdn.com/v11/images/footer/t_appgallery.png"
+          height="32px"
+          width="108px"
+        />
       </div>
     </div>
   </div>
