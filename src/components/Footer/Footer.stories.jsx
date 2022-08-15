@@ -1,14 +1,10 @@
-import Footer from "./index";
+import FooterWrapper from ".";
 
 export default {
   title: "Footer",
-  component: Footer,
+  component: FooterWrapper,
 };
 
-const Template = (args) => <Footer {...args} />;
+const Template = () => <FooterWrapper />;
 
-export const Cooperation = Template.bind({});
-Cooperation.args = {
-  primary: "footer",
-  label: "Footer",
-};
+export const Footer = Template.bind({});

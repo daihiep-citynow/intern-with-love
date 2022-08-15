@@ -7,7 +7,8 @@
 body {
   font-family: "Baloo 2", cursive;
   box-sizing: border-box;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* scroll bar */
@@ -67,7 +68,6 @@ body {
 .footer-wrapper {
   grid-area: footer;
   height: 700px;
-  background-color: aquamarine;
 }
 
 .grid-container {
@@ -80,4 +80,9 @@ body {
   gap: 1rem;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.full-width {
+  margin-left: calc(-100vw / 2 + 1170px / 2);
+  margin-right: calc(-100vw / 2 + 1170px / 2);
 }
