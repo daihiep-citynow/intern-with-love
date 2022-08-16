@@ -6,21 +6,23 @@
   height: 100%;
   margin: 0 auto;
   background-color: white;
-}
 
-.header-wrapper-inner > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.header-divider {
-  width: 1px;
-  height: 24px;
-  background-color: rgba(0 0 0 / 20%);
-}
+  > .header-divider {
+    width: 1px;
+    height: 24px;
+    background-color: rgba(0 0 0 / 20%);
+  }
 
-.header-wrapper-left > div,
-.header-wrapper-right > div {
-  margin-left: 12px;
+  .header-wrapper-left,
+  .header-wrapper-right {
+    > div {
+      margin-left: 12px;
+    }
+  }
 }
