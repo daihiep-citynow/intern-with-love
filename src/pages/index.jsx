@@ -1,13 +1,5 @@
-import { Header, Hero, Footer, LeftBox, RightBox } from "../components";
+import { HomeScreen } from "../views";
 
-const Home = () => (
-  <div className="grid-container">
-    <Header />
-    <Hero />
-    <LeftBox />
-    <RightBox />
-    <Footer />
-  </div>
-);
+const Home = () => <HomeScreen />;
 
 export default Home;

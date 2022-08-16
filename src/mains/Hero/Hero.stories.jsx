@@ -5,11 +5,6 @@ export default {
   component: Hero,
 };
 
-const Template = (args) => <Hero {...args} />;
+const Template = () => <Hero />;
 
 export const HeroBeta = Template.bind({});
-
-HeroBeta.args = {
-  primary: "hero-wrapper",
-  label: "HeroBeta",
-};

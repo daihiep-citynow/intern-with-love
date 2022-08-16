@@ -3,7 +3,7 @@ import { SearchOutlined, LoadingOutlined, CloseCircleOutlined } from "@ant-desig
 import HeadlessTippy from "@tippyjs/react/headless";
 import axios from "axios";
 
-import { useDebounce } from "../../../hooks";
+import { useDebounce } from "../../../../hooks";
 
 import styles from "./HeaderSearch.module.scss";
 

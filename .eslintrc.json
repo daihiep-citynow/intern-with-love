@@ -26,7 +26,6 @@
       }
     ],
     "object-curly-newline": "off",
-    "import/no-unresolved": "error", // turn on errors for missing imports
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
     "react/jsx-props-no-spreading": "off",
@@ -46,7 +45,8 @@
   },
   "settings": {
     "import/resolver": {
-      "node": {
+      "alias": {
+        "map": [["@", "./src/"]],
         "extensions": [".js", ".jsx"]
       }
     }
