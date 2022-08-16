@@ -30,13 +30,6 @@
     "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
     "react/jsx-props-no-spreading": "off",
-    "import/order": [
-      2,
-      {
-        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
-        "newlines-between": "always"
-      }
-    ], // define order of imports
     "import/newline-after-import": "warn", // turn on errors for missing imports
     "quotes": ["error", "double", { "avoidEscape": true }], // turn on checking for quotes in jsx is double quotes
     "react/prop-types": "off", // turn off for now

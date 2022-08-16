@@ -10,8 +10,7 @@
     "prettier": "npx prettier --write .",
     "prettier:check": "prettier --config .prettierrc.json --check .",
     "prepare": "husky install",
-    "stylelint": "npx stylelint \"**/*.css\" --fix",
-    "lint-check-all": "npm run lint && prettier && npm run stylelint",
+    "stylelint": "npx stylelint \"**/*.scss\" --fix",
     "storybook": "start-storybook -p 6006",
     "homepage": "http://daihiep-citynow.github.io/intern-with-love",
     "predeploy": "npm run build-storybook",
@@ -55,22 +54,24 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "normalize.css": "^8.0.1",
+    "postcss": "^8.4.16",
     "prettier": "^2.7.1",
+    "sass": "^1.54.4",
     "storybook-react-context": "^0.6.0",
-    "stylelint": "^14.9.1",
+    "stylelint": "^14.10.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^8.0.0",
-    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard": "^27.0.0",
     "stylelint-prettier": "^2.0.0",
     "stylelint-webpack-plugin": "^3.3.0"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{jsx}": [
       "eslint --fix",
       "npx prettier --write .",
       "git add ."
     ],
-    "*.{css,scss}": [
+    "*.{scss}": [
       "npx stylelint --fix",
       "git add ."
     ]

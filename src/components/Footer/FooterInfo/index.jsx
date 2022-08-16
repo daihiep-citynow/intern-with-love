@@ -1,6 +1,6 @@
 import FooterInfoTop from "./FooterInfoTop";
 import FooterInfoBottom from "./FooterInfoBottom";
-import styles from "./FooterInfo.module.css";
+import styles from "./FooterInfo.module.scss";
 
 const FooterInfo = () => (
   <div className={styles["footer-info-wrapper"]}>

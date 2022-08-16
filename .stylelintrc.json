@@ -6,8 +6,7 @@
       true,
       {
         "singleQuote": false,
-        "trailingComma": "all",
-        "endOfLine": "auto"
+        "trailingComma": "all"
       }
     ],
     "comment-empty-line-before": "always",

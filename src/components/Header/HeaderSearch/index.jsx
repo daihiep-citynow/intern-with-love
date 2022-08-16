@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { useDebounce } from "../../../hooks";
 
-import styles from "./HeaderSearch.module.css";
+import styles from "./HeaderSearch.module.scss";
 
 const HeaderSearch = () => {
   const [searchValue, setSearchValue] = useState("");

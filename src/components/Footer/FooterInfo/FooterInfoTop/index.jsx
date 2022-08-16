@@ -1,7 +1,7 @@
 import { FacebookFilled, InstagramFilled, SkypeFilled } from "@ant-design/icons";
 import Image from "next/image";
 
-import styles from "./FooterInfoTop.module.css";
+import styles from "./FooterInfoTop.module.scss";
 
 const FooterInfoTop = () => (
   <div className={styles["footer-info-top-wrapper"]}>

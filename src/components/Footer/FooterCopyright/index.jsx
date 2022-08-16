@@ -1,6 +1,6 @@
 import { PushpinFilled, PhoneFilled, MailFilled } from "@ant-design/icons";
 
-import styles from "./FooterCopyright.module.css";
+import styles from "./FooterCopyright.module.scss";
 
 const FooterCopyright = () => (
   <div className={styles["footer-copyright-wrapper"]}>

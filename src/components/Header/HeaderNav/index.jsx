@@ -6,7 +6,7 @@ import classnames from "classnames";
 
 import { useLanguage } from "../../../hooks";
 
-import styles from "./HeaderNav.module.css";
+import styles from "./HeaderNav.module.scss";
 import HeaderSubNav, { HeaderSubNavLanguage } from "./HeaderSubNav";
 
 const navLinks = [

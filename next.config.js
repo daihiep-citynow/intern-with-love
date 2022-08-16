@@ -1,4 +1,4 @@
-const StylelintPlugin = require("stylelint-webpack-plugin"); // eslint-disable-line
+const StylelintPlugin = require("stylelint-webpack-plugin");
 
 const nextConfig = {
   reactStrictMode: true,

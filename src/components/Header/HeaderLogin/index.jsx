@@ -1,6 +1,6 @@
 import classnames from "classnames";
 
-import styles from "./HeaderLogin.module.css";
+import styles from "./HeaderLogin.module.scss";
 
 const HeaderLogin = () => (
   <div className={styles["header-login-wrapper"]}>

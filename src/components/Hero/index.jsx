@@ -1,8 +1,6 @@
 import { Carousel } from "antd";
 import Image from "next/image";
 
-import "./Hero.module.css";
-
 const Hero = () => (
   <div className="hero-wrapper">
     <Carousel autoplay>

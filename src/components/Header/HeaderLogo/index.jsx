@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "./HeaderLogo.module.css";
+import styles from "./HeaderLogo.module.scss";
 
 const HeaderLogo = () => (
   <div className={styles["header-logo-wrapper"]}>

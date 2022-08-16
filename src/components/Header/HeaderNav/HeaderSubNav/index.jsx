@@ -1,12 +1,10 @@
 import { useContext } from "react";
 
 import { useLanguage } from "../../../../hooks";
-
-import styles from "./HeaderSubNav.module.css";
+import styles from "./HeaderSubNav.module.scss";
 
 export const HeaderSubNavLanguage = () => {
-  // eslint-disable-next-line no-unused-vars
-  const { currentLanguage, setCurrentLanguage } = useContext(useLanguage.LanguageContext);
+  const { setCurrentLanguage } = useContext(useLanguage.LanguageContext);
   const { languagesList } = useLanguage;
 
   const handleChangeLanguage = (language) => {

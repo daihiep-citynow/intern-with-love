@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./HeaderBeta.module.css";
+import styles from "./HeaderBeta.module.scss";
 
 const HeaderBeta = () => (
   <div className={styles["header-beta-wrapper"]}>

@@ -1,10 +1,3 @@
-:root {
-  --header-height: 56px;
-  --hero-height: 420px;
-  --footer-height: 700px;
-  --primary-font: "Nunito";
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +7,7 @@
 }
 
 body {
-  font-family: var(--primary-font), sans-serif;
+  font-family: Nunito, sans-serif;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -75,7 +68,7 @@ ul {
   right: 0;
   left: 0;
   width: 100%;
-  height: var(--header-height);
+  height: 420px;
   grid-area: header;
   background-color: #fff;
   border-bottom: #dadada solid 1px;
@@ -83,7 +76,7 @@ ul {
 }
 
 .hero-wrapper {
-  margin-top: var(--header-height);
+  margin-top: 420px;
   grid-area: hero;
   height: 420px;
   max-width: 1170px;

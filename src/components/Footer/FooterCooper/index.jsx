@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "./FooterCooper.module.css";
+import styles from "./FooterCooper.module.scss";
 
 const FooterCooper = () => (
   <div className={styles["footer-cooper-wrapper"]}>

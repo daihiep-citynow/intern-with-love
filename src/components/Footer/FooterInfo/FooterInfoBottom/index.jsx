@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "./FooterInfoBottom.module.css";
+import styles from "./FooterInfoBottom.module.scss";
 
 const FooterInfoBottom = () => (
   <div className={styles["footer-info-bottom"]}>

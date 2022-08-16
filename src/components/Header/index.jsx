@@ -4,7 +4,7 @@ import HeaderNav from "./HeaderNav";
 import HeaderSearch from "./HeaderSearch";
 import HeaderButton from "./HeaderButton";
 import HeaderLogin from "./HeaderLogin";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = () => (
   <header className="header-wrapper">
