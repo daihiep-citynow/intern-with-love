@@ -91,7 +91,6 @@ ul {
 
 .left-wrapper {
   grid-area: left;
-  background-color: aquamarine;
 }
 
 .right-wrapper {
