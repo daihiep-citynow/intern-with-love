@@ -5,8 +5,8 @@ import axios from "axios";
 import { useLanguage } from "../hooks";
 
 // another
-import "antd/dist/antd.css";
 import "../styles/index.scss";
+import "antd/dist/antd.css";
 
 axios.defaults.baseURL = "https://intern-with-love.daihiep.co/";
 

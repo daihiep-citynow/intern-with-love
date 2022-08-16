@@ -1,44 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Nunito, sans-serif;
-  box-sizing: border-box;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-/* scroll bar */
+@import "./normalize.scss";
 
 /* width */
 ::-webkit-scrollbar {
@@ -68,7 +28,7 @@ ul {
   right: 0;
   left: 0;
   width: 100%;
-  height: 420px;
+  height: 56px;
   grid-area: header;
   background-color: #fff;
   border-bottom: #dadada solid 1px;
@@ -76,7 +36,7 @@ ul {
 }
 
 .hero-wrapper {
-  margin-top: 420px;
+  margin-top: 56px;
   grid-area: hero;
   height: 420px;
   max-width: 1170px;
@@ -92,7 +52,6 @@ ul {
 
 .footer-wrapper {
   grid-area: footer;
-  height: 700px;
 }
 
 .grid-container {

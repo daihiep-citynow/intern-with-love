@@ -11,32 +11,32 @@ const FooterInfoTop = () => (
       </div>
       <div className={styles["footer-info-top-items"]}>
         <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
+        <span>Chính sách bảo mật</span>
+        <span>Sơ đồ</span>
+        <span>Chính sách SHTT</span>
+        <span>NCCI</span>
+        <span>Thỏa thuận người dùng</span>
+        <span>Liên hệ quảng cáo</span>
       </div>
     </div>
     <div className={styles["footer-info-top-middle"]}>
       <div className={styles["footer-info-top-title"]}>sản phẩm khác</div>
       <div className={styles["footer-info-top-items"]}>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
-        <span>Trợ giúp</span>
+        <span>Mobile App</span>
+        <span>Dịch vụ 3G</span>
+        <span>Mobile Web</span>
+        <span>NCT Corp</span>
+        <span>Smart TV</span>
+        <span>Tuyển dụng</span>
+        <span>Desktop</span>
       </div>
     </div>
     <div className={styles["footer-info-top-right"]}>
       <div className={styles["footer-info-top-title"]}>top từ khóa</div>
       <div className={styles["footer-info-top-last"]}>
-        <span>Girls - aespa, Left And Right - Charlie Puth, Jung Kook</span>
-        <span>Vì Mẹ Anh Bắt Chia Tay, Chạy Khỏi Thế Giới Này,</span>
-        <span>vaicaunoicokhiennguoithaydoi (acoustic)</span>
+        <p>Girls - aespa, Left And Right - Charlie Puth, Jung Kook</p>
+        <p>Vì Mẹ Anh Bắt Chia Tay, Chạy Khỏi Thế Giới Này,</p>
+        <p>vaicaunoicokhiennguoithaydoi (acoustic)</p>
       </div>
       <div className={styles["footer-info-top-title-sub"]}>kết nối với chúng tôi</div>
       <div className={styles["footer-info-icons"]}>
