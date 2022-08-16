@@ -10,6 +10,7 @@
   padding: 0;
   border: 0;
   font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -76,6 +77,7 @@ ul {
   width: 100%;
   height: var(--header-height);
   grid-area: header;
+  background-color: #fff;
   border-bottom: #dadada solid 1px;
   z-index: 9999;
 }
@@ -89,7 +91,6 @@ ul {
 
 .left-wrapper {
   grid-area: left;
-  height: 1000px;
   background-color: aquamarine;
 }
 
@@ -105,10 +106,10 @@ ul {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header header header header header"
-    "hero hero hero hero hero hero hero hero hero hero"
-    "left left left left left left left left right right"
-    "footer footer footer footer footer footer footer footer footer footer";
+    "header header header header header header header header header"
+    "hero hero hero hero hero hero hero hero hero"
+    "left left left left left left left right right"
+    "footer footer footer footer footer footer footer footer footer";
   gap: 1rem;
   max-width: 1170px;
   margin: 0 auto;
