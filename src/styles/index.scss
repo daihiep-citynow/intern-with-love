@@ -1,4 +1,4 @@
-@import "./normalize.scss";
+@import "./normalize";
 
 /* width */
 ::-webkit-scrollbar {
@@ -32,7 +32,7 @@
   grid-area: header;
   background-color: #fff;
   border-bottom: #dadada solid 1px;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .hero-wrapper {
@@ -57,10 +57,11 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header header header header"
-    "hero hero hero hero hero hero hero hero hero"
-    "left left left left left left left right right"
-    "footer footer footer footer footer footer footer footer footer";
+    "header header"
+    "hero hero"
+    "left right"
+    "footer footer";
+  grid-template-columns: 1fr 300px;
   gap: 1rem;
   max-width: 1170px;
   margin: 0 auto;

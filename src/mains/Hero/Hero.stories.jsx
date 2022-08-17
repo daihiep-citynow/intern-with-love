@@ -1,10 +1,10 @@
-import Hero from ".";
+import HeroWrapper from ".";
 
 export default {
   title: "Hero",
-  component: Hero,
+  component: HeroWrapper,
 };
 
-const Template = () => <Hero />;
+const Template = () => <HeroWrapper />;
 
-export const HeroBeta = Template.bind({});
+export const Hero = Template.bind({});

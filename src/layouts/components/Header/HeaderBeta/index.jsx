@@ -1,21 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
-
+// components
+import ImageLink from "@/components/ImageLink";
+// another
 import styles from "./HeaderBeta.module.scss";
 
 const HeaderBeta = () => (
   <div className={styles["header-beta-wrapper"]}>
-    <Link href="/">
-      <a className={styles["header-beta-link"]}>
-        <Image
-          src="https://stc-id.nixcdn.com/v11/images/ic_new.png"
-          alt="beta"
-          width="96px"
-          height="32px"
-          objectFit="contain"
-        />
-      </a>
-    </Link>
+    <ImageLink
+      href="/"
+      src="https://stc-id.nixcdn.com/v11/images/ic_new.png"
+      width="96"
+      height="32"
+    />
   </div>
 );
 

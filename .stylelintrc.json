@@ -1,6 +1,6 @@
 {
   "plugins": ["stylelint-prettier"],
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
   "rules": {
     "prettier/prettier": [
       true,
@@ -15,7 +15,7 @@
     "comment-no-empty": true,
     "at-rule-name-case": "lower",
     "color-hex-case": "lower",
-    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh", "deg"],
+    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh", "deg", "fr"],
     "color-no-invalid-hex": [
       true,
       {

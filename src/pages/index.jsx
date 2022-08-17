@@ -1,4 +1,4 @@
-import { HomeScreen } from "../views";
+import HomeScreen from "../views/HomeScreen";
 
 const Home = () => <HomeScreen />;
 

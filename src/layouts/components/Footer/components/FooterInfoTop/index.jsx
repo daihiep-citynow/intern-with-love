@@ -38,13 +38,13 @@ const FooterInfoTop = () => (
         <p>Vì Mẹ Anh Bắt Chia Tay, Chạy Khỏi Thế Giới Này,</p>
         <p>vaicaunoicokhiennguoithaydoi (acoustic)</p>
       </div>
-      <div className={styles["footer-info-top-title-sub"]}>kết nối với chúng tôi</div>
-      <div className={styles["footer-info-icons"]}>
+      <div className={styles["footer-info-top-title"]}>kết nối với chúng tôi</div>
+      <div className={styles["footer-info-top-icons"]}>
         <FacebookFilled />
         <InstagramFilled />
         <SkypeFilled />
       </div>
-      <div className={styles["footer-info-logos"]}>
+      <div className={styles["footer-info-top-logos"]}>
         <Image
           src="https://stc-id.nixcdn.com/v11/images/footer/t_google_play.png"
           height="32px"

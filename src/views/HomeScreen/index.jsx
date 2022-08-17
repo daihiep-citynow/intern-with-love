@@ -5,11 +5,13 @@ import RightBox from "@/mains/RightBox";
 import LeftBox from "@/mains/LeftBox";
 
 const HomeScreen = () => (
-  <MainLayout>
-    <Hero />
-    <LeftBox />
-    <RightBox />
-  </MainLayout>
+  <div className="grid-container">
+    <MainLayout>
+      <Hero />
+      <LeftBox />
+      <RightBox />
+    </MainLayout>
+  </div>
 );
 
 export default HomeScreen;

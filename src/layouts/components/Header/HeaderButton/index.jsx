@@ -1,15 +1,13 @@
-import { HomeOutlined, CloudUploadOutlined } from "@ant-design/icons";
-
+// libraries
+import UploadButton from "./UploadButton";
+import HomeButton from "./HomeButton";
+// another
 import styles from "./HeaderButton.module.scss";
 
 const HeaderButton = () => (
   <div className={styles["header-button-wrapper"]}>
-    <div className={styles["header-button-icon"]}>
-      <HomeOutlined />
-    </div>
-    <div className={styles["header-button-icon"]}>
-      <CloudUploadOutlined />
-    </div>
+    <HomeButton />
+    <UploadButton />
   </div>
 );
 

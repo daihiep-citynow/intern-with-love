@@ -15,6 +15,18 @@ const HeaderSearch = () => {
 
   const debounced = useDebounce(searchValue, 300);
 
+  const inputRef = useRef();
+
+  const handleClear = () => {
+    setSearchValue("");
+    inputRef.current.focus();
+    setSearchResult([]);
+  };
+
+  const handleHideResult = () => {
+    setShowResult(false);
+  };
+
   useEffect(() => {
     if (!debounced.trim()) {
       setSearchResult([]);
@@ -38,18 +50,6 @@ const HeaderSearch = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debounced]);
-
-  const inputRef = useRef();
-
-  const handleClear = () => {
-    setSearchValue("");
-    inputRef.current.focus();
-    setSearchResult([]);
-  };
-
-  const handleHideResult = () => {
-    setShowResult(false);
-  };
 
   return (
     <div className={styles["header-search-wrapper"]}>

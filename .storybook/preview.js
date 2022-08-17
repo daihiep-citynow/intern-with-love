@@ -2,7 +2,7 @@ import * as nextImage from "next/image";
 
 import { useLanguage } from "../src/hooks";
 import "antd/dist/antd.css";
-import "../src/pages/index.css";
+import "../src/styles/index.scss";
 
 Object.defineProperty(nextImage, "default", {
   configurable: true,

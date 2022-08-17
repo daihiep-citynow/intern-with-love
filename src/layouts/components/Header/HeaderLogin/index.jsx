@@ -1,15 +1,13 @@
-import classnames from "classnames";
-
+// component
+import SignInButton from "./SignInButton";
+import SignUpButton from "./SignUpButton";
+// another
 import styles from "./HeaderLogin.module.scss";
 
 const HeaderLogin = () => (
   <div className={styles["header-login-wrapper"]}>
-    <div className={classnames(styles["header-login-sign-in"], styles["header-login-button"])}>
-      Đăng nhập
-    </div>
-    <div className={classnames(styles["header-login-sign-up"], styles["header-login-button"])}>
-      Đăng ký
-    </div>
+    <SignInButton />
+    <SignUpButton />
   </div>
 );
 

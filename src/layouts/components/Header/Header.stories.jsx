@@ -1,10 +1,10 @@
-import Header from ".";
+import HeaderComponent from ".";
 
 export default {
   title: "Header",
-  component: Header,
+  component: HeaderComponent,
 };
 
-const Template = () => <Header />;
+const Template = () => <HeaderComponent />;
 
-export const HeaderWrapper = Template.bind({});
+export const Header = Template.bind({});

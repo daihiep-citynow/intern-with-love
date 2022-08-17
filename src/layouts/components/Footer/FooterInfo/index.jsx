@@ -1,5 +1,5 @@
-import FooterInfoTop from "./FooterInfoTop";
-import FooterInfoBottom from "./FooterInfoBottom";
+import FooterInfoTop from "../components/FooterInfoTop";
+import FooterInfoBottom from "../components/FooterInfoBottom";
 import styles from "./FooterInfo.module.scss";
 
 const FooterInfo = () => (
