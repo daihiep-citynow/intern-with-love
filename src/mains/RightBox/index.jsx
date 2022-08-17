@@ -1,3 +1,9 @@
-const RightBox = () => <div className="right-wrapper">right-wrapper</div>;
+import TopSong from "../TopSong";
+
+const RightBox = () => (
+  <div className="right-wrapper">
+    <TopSong />
+  </div>
+);
 
 export default RightBox;

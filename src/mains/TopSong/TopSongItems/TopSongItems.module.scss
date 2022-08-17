@@ -1,0 +1,59 @@
+.top-song-items {
+  margin-top: 20px;
+  box-sizing: border-box;
+
+  .top-song-item {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 18px;
+
+    .top-song-item-title {
+      height: 100%;
+      margin-left: 10px;
+    }
+
+    .top-song-item-title-name {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .top-song-item-title-artist {
+      font-size: 15px;
+      color: #cda87f;
+      font-weight: 400;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ddc8c8;
+      margin: 10px 2px;
+    }
+  }
+
+  .top-song-first-item {
+    width: 300px;
+    height: 100px;
+
+    .top-song-item-index {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px;
+      background-color: #e74c3c;
+      color: #fff;
+      z-index: 10;
+    }
+  }
+}
