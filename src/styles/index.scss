@@ -1,0 +1,73 @@
+@import "./normalize";
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* layout */
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  grid-area: header;
+  background-color: #fff;
+  border-bottom: #dadada solid 1px;
+  z-index: 9;
+}
+
+.hero-wrapper {
+  margin-top: 56px;
+  grid-area: hero;
+  height: 420px;
+  max-width: 1170px;
+}
+
+.left-wrapper {
+  grid-area: left;
+}
+
+.right-wrapper {
+  grid-area: right;
+}
+
+.footer-wrapper {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "left right"
+    "footer footer";
+  grid-template-columns: 1fr 300px;
+  gap: 1rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.full-width {
+  margin-left: calc(-100vw / 2 + 1170px / 2);
+  margin-right: calc(-100vw / 2 + 1170px / 2);
+}

@@ -1,0 +1,29 @@
+.footer-copyright-wrapper {
+  height: 64px;
+  background-color: #0ca2ee;
+  color: #fff;
+  font-size: 14px;
+
+  .footer-copyright-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-copyright-contact {
+    display: flex;
+
+    div {
+      margin-right: 16px;
+    }
+
+    span:first-child {
+      font-size: 16px;
+      margin-right: 4px;
+    }
+  }
+}

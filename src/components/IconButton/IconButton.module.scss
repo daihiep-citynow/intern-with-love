@@ -1,0 +1,17 @@
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+
+  ~ .icon-button {
+    margin-left: 16px;
+  }
+
+  span svg {
+    height: 22px;
+    width: 22px;
+    color: #2daaed;
+  }
+}

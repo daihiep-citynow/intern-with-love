@@ -2,6 +2,7 @@
   "name": "intern-with-love",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +11,7 @@
     "prettier": "npx prettier --write .",
     "prettier:check": "prettier --config .prettierrc.json --check .",
     "prepare": "husky install",
-    "stylelint": "npx stylelint \"**/*.css\" --fix",
-    "lint-check-all": "npm run lint && prettier && npm run stylelint",
+    "stylelint": "npx stylelint \"**/*.scss\" --fix",
     "storybook": "start-storybook -p 6006",
     "homepage": "http://daihiep-citynow.github.io/intern-with-love",
     "predeploy": "npm run build-storybook",
@@ -19,6 +19,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@tippyjs/react": "^4.2.6",
+    "antd": "^4.22.4",
+    "axios": "^0.27.2",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -26,6 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-contexts": "^5.3.21",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
@@ -39,7 +44,8 @@
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-next": "12.2.3",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "2.25.3",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^4.2.1",
@@ -50,21 +56,24 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "normalize.css": "^8.0.1",
+    "postcss": "^8.4.16",
     "prettier": "^2.7.1",
-    "stylelint": "^14.9.1",
+    "sass": "^1.54.4",
+    "storybook-addon-next": "^1.6.7",
+    "storybook-react-context": "^0.6.0",
+    "stylelint": "^14.10.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^8.0.0",
-    "stylelint-config-standard": "^26.0.0",
-    "stylelint-prettier": "^2.0.0",
-    "stylelint-webpack-plugin": "^3.3.0"
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{jsx}": [
       "eslint --fix",
       "npx prettier --write .",
       "git add ."
     ],
-    "*.{css,scss}": [
+    "*.{scss}": [
       "npx stylelint --fix",
       "git add ."
     ]
