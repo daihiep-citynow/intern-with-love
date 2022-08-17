@@ -2,12 +2,45 @@
   --header-height: 56px;
   --hero-height: 420px;
   --footer-height: 700px;
+  --primary-font: "Nunito";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
 }
 
 body {
-  font-family: "Baloo 2", cursive;
+  font-family: var(--primary-font), sans-serif;
   box-sizing: border-box;
   overflow: auto;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 /* scroll bar */
@@ -42,15 +75,15 @@ body {
   width: 100%;
   height: var(--header-height);
   grid-area: header;
-  background-color: aquamarine;
-  border-bottom: 1px solid black;
+  border-bottom: #dadada solid 1px;
+  z-index: 9999;
 }
 
 .hero-wrapper {
   margin-top: var(--header-height);
   grid-area: hero;
   height: 420px;
-  background-color: aquamarine;
+  max-width: 1170px;
 }
 
 .left-wrapper {

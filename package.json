@@ -19,6 +19,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@tippyjs/react": "^4.2.6",
+    "antd": "^4.22.4",
+    "axios": "^0.27.2",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
