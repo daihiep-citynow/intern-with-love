@@ -2,15 +2,31 @@
   margin-top: 20px;
   box-sizing: border-box;
 
+  .top-song-first-item {
+    width: 300px;
+    height: 100px;
+
+    .top-song-item-index {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px;
+      background-color: #e74c3c;
+      color: #fff;
+      z-index: 10;
+    }
+  }
+
   .top-song-item {
     position: relative;
     display: flex;
     width: 300px;
-    height: 100px;
     margin-bottom: 18px;
 
     .top-song-item-title {
-      height: 100%;
       margin-left: 10px;
     }
 
@@ -37,22 +53,18 @@
       background-color: #ddc8c8;
       margin: 10px 2px;
     }
-  }
 
-  .top-song-first-item {
-    width: 300px;
-    height: 100px;
+    .top-song-item-content {
+      display: flex;
+    }
 
     .top-song-item-index {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 34px;
-      height: 34px;
+      width: 31px;
+      height: 31px;
+      font-size: 20px;
       text-align: center;
-      line-height: 34px;
-      background-color: #e74c3c;
-      color: #fff;
+      line-height: 48px;
+      color: #98be9c;
       z-index: 10;
     }
   }
