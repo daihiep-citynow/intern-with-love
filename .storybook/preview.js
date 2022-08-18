@@ -1,3 +1,14 @@
+import * as nextImage from "next/image";
+
+import { useLanguage } from "../src/hooks";
+import "antd/dist/antd.css";
+import "../src/styles/index.scss";
+
+Object.defineProperty(nextImage, "default", {
+  configurable: true,
+  value: (props) => <img {...props} />,
+});
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +18,11 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <useLanguage.LanguageProvider>
+      <Story />
+    </useLanguage.LanguageProvider>
+  ),
+];

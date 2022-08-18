@@ -1,0 +1,40 @@
+.right-box-nav {
+  display: flex;
+  margin-top: 10px;
+
+  .right-box-nav-item {
+    width: 33.3%;
+    height: 32px;
+    text-align: center;
+    background-color: #e5e5e5;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.5 ease-in-out;
+    cursor: pointer;
+
+    ~ .right-box-nav-item {
+      border-left: 1px solid #fff;
+    }
+
+    &:hover {
+      background-color: red;
+      color: #fff;
+    }
+  }
+
+  .right-box-nav-item.right-box-nav-item-active {
+    background-color: red;
+    color: #fff;
+  }
+
+  .right-box-nav-item-left {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .right-box-nav-item-right {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}

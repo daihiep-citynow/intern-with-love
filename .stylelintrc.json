@@ -1,13 +1,12 @@
 {
   "plugins": ["stylelint-prettier"],
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
   "rules": {
     "prettier/prettier": [
       true,
       {
         "singleQuote": false,
-        "trailingComma": "all",
-        "endOfLine": "auto"
+        "trailingComma": "all"
       }
     ],
     "comment-empty-line-before": "always",
@@ -16,7 +15,7 @@
     "comment-no-empty": true,
     "at-rule-name-case": "lower",
     "color-hex-case": "lower",
-    "unit-allowed-list": ["em", "rem", "%", "px"],
+    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh", "deg", "fr"],
     "color-no-invalid-hex": [
       true,
       {
@@ -31,6 +30,7 @@
         "ignorePseudoClasses": ["global"]
       }
     ],
-    "max-empty-lines": 1
+    "max-empty-lines": 1,
+    "no-descending-specificity": null
   }
 }
