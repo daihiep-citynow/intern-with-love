@@ -1,6 +1,6 @@
 // components
 import TopSongHeader from "./TopSongHeader";
-import TopNav from "../RightBox/components/TopNav";
+import TopNav from "../components/TopNav";
 import TopSongItems from "./TopSongItems";
 
 const TopSong = () => (
