@@ -1,34 +1,40 @@
 // libraries
-import classnames from "classnames";
+import { useState, useEffect } from "react";
+import axios from "axios";
 // components
-import TopSongImage from "../components/TopSongImage";
+import TopSongFirstItem from "../components/TopSongFirstItem";
+import TopSongItem from "../components/TopSongItem";
 // another
 import styles from "./TopSongItems.module.scss";
 
-const TopSongItems = () => (
-  <div className={styles["top-song-items"]}>
-    <div className={classnames(styles["top-song-item"], styles["top-song-first-item"])}>
-      <div className={styles["top-song-item-index"]}>
-        <span>1</span>
-      </div>
-      <TopSongImage />
-      <div className={styles["top-song-item-title"]}>
-        <span className={styles["top-song-item-title-name"]}>Vì Anh Đâu Có Biết</span>
-        <span className={styles["top-song-item-title-artist"]}>Madihu</span>
-      </div>
+const TopSongItems = () => {
+  const [firstSong, setFirstSong] = useState({});
+  const [topSongs, setTopSongs] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const options = {
+        method: "GET",
+        url: "topsongs",
+      };
+
+      const { data } = await axios(options);
+
+      setFirstSong(data[0]);
+      setTopSongs(data.slice(1));
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className={styles["top-song-items"]}>
+      <TopSongFirstItem title={firstSong.title} artist={firstSong.artist} />
+      {topSongs.map((song, index) => (
+        <TopSongItem key={song.id} index={index + 2} title={song.title} artist={song.artist} />
+      ))}
     </div>
-    <div className={styles["top-song-item"]}>
-      <div className={styles["top-song-item-content"]}>
-        <div className={styles["top-song-item-index"]}>
-          <span>2</span>
-        </div>
-        <div className={styles["top-song-item-title"]}>
-          <span className={styles["top-song-item-title-name"]}>Vì Mẹ Anh Bắt Chia Tay</span>
-          <span className={styles["top-song-item-title-artist"]}>Miu Lê</span>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 export default TopSongItems;
