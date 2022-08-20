@@ -1,6 +1,6 @@
 import { useState, createContext, useMemo } from "react";
 
-import languages from "../languages/languages.json";
+import languages from "../locates";
 
 const LanguageContext = createContext();
 
