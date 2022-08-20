@@ -1,3 +1,9 @@
-const LeftBox = () => <div className="left-wrapper">left-wrapper</div>;
+import TopicEvent from "./components/TopicEvent";
+
+const LeftBox = () => (
+  <div className="left-wrapper">
+    <TopicEvent />
+  </div>
+);
 
 export default LeftBox;
