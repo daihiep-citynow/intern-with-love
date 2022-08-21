@@ -1,0 +1,10 @@
+.hot-album-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 20px;
+
+  .song-card-image {
+    margin-bottom: 8px;
+  }
+}
