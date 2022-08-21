@@ -3,15 +3,15 @@ import { useContext } from "react";
 import Link from "next/link";
 import { Popover } from "antd";
 // hooks
-import { useLanguage } from "@/hooks";
+import { useLocates } from "@/hooks";
 // components
 import HeaderSubNav from "../../HeaderSubNav";
 // another
 import styles from "./HeaderNavItem.module.scss";
 
 const HeaderNavItem = ({ key, navLink }) => {
-  const { currentLanguage } = useContext(useLanguage.LanguageContext);
-  const { languages } = useLanguage;
+  const { currentLanguage } = useContext(useLocates.LanguageContext);
+  const { languages } = useLocates;
 
   return (
     <Popover key={key} content={HeaderSubNav} placement="bottomLeft">

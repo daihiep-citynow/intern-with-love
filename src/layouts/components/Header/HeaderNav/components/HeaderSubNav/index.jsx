@@ -1,11 +1,11 @@
 import { useContext } from "react";
 
-import { useLanguage } from "@/hooks";
+import { useLocates } from "@/hooks";
 import styles from "./HeaderSubNav.module.scss";
 
 export const HeaderSubNavLanguage = () => {
-  const { setCurrentLanguage } = useContext(useLanguage.LanguageContext);
-  const { languagesList } = useLanguage;
+  const { setCurrentLanguage } = useContext(useLocates.LanguageContext);
+  const { languagesList } = useLocates;
 
   const handleChangeLanguage = (language) => {
     setCurrentLanguage(language);

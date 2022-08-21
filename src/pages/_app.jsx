@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // hooks
-import { useLanguage } from "../hooks";
+import { useLocates } from "../hooks";
 
 // another
 import "../styles/index.scss";
@@ -11,9 +11,9 @@ import "antd/dist/antd.css";
 axios.defaults.baseURL = "https://intern-with-love.daihiep.co/";
 
 const MyApp = ({ Component, pageProps }) => (
-  <useLanguage.LanguageProvider>
+  <useLocates.LanguageProvider>
     <Component {...pageProps} />
-  </useLanguage.LanguageProvider>
+  </useLocates.LanguageProvider>
 );
 
 export default MyApp;
