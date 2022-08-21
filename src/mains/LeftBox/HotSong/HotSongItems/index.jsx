@@ -92,8 +92,8 @@ const items = [
 
 const HotSongItems = () => (
   <div className={styles["hot-song-items-wrapper"]}>
-    {items.map(({ id /* , title, artist, src, traffic  */ }) => (
-      <HotSongItem key={id} />
+    {items.map(({ id, title, artist, src, traffic }) => (
+      <HotSongItem key={id} title={title} artist={artist} src={src} traffic={traffic} />
     ))}
   </div>
 );

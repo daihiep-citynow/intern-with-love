@@ -1,10 +1,11 @@
-import Image from "next/image";
-
+// components
+import ImageLink from "@/components/ImageLink";
+// another
 import styles from "./HotAlbumItem.module.scss";
 
 const HotAlbumItem = ({ src }) => (
   <div className={styles["hot-album-wrapper"]}>
-    <Image src={src} height={152} width={152} />
+    <ImageLink src={src} href="/" width={152} height={152} />
   </div>
 );
 
