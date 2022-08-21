@@ -15,7 +15,6 @@
     "comment-no-empty": true,
     "at-rule-name-case": "lower",
     "color-hex-case": "lower",
-    "unit-allowed-list": ["em", "rem", "%", "px", "vw", "vh", "deg", "fr"],
     "color-no-invalid-hex": [
       true,
       {
@@ -23,7 +22,6 @@
       }
     ],
     "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
-    "selector-max-compound-selectors": 3,
     "selector-pseudo-class-no-unknown": [
       true,
       {

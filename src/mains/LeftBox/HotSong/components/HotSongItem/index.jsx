@@ -1,6 +1,6 @@
 // components
 import Image from "next/image";
-import { CustomerServiceOutlined } from "@ant-design/icons";
+import { CustomerServiceOutlined, HeartFilled, PlayCircleFilled } from "@ant-design/icons";
 // another
 import styles from "./HotSongItem.module.scss";
 
@@ -14,6 +14,16 @@ const HotSongItem = ({ src, title, artist, traffic }) => (
     <div className={styles["item-traffic"]}>
       <CustomerServiceOutlined />
       <span className={styles["item-traffic-number"]}>{traffic}</span>
+    </div>
+    <div className={styles["item-control"]}>
+      <div className={styles["item-control-heart"]}>
+        <HeartFilled />
+        <HeartFilled />
+      </div>
+      <div className={styles["item-control-play"]}>
+        <PlayCircleFilled />
+        <PlayCircleFilled />
+      </div>
     </div>
   </div>
 );

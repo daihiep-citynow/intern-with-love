@@ -7,15 +7,31 @@
   margin-bottom: 16px;
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 37.1%);
+    z-index: 0;
+  }
+
   .item-traffic {
     position: absolute;
     right: 0;
     display: block;
     z-index: 1;
-    padding: 0 5px 0 15px;
+    padding: 0 5px;
     color: #c7c7c7;
     font-size: 12px;
     line-height: 24px;
+    background-color: rgb(0 0 0 / 47.9%);
+
+    .item-traffic-number {
+      margin-left: 4px;
+    }
   }
 
   .item-duration {
@@ -28,6 +44,7 @@
     color: #fff;
     font-size: 12px;
     line-height: 16px;
+    background-color: rgb(0 0 0 / 47.9%);
   }
 
   .item-content {
@@ -35,6 +52,7 @@
     bottom: 0;
     left: 0;
     padding: 1rem;
+    z-index: 1;
 
     .item-title {
       display: box;
