@@ -15,11 +15,13 @@ const TopMVItems = () => {
 
   return (
     <div className={styles["top-mv-items"]}>
-      <TopMVFirstItem
-        image={firstVideo?.image}
-        title={firstVideo?.title}
-        artist={firstVideo?.artist}
-      />
+      {firstVideo && (
+        <TopMVFirstItem
+          image={firstVideo.image}
+          title={firstVideo.title}
+          artist={firstVideo.artist}
+        />
+      )}
       {topVideos.map((video) => (
         <TopMVItem key={video.id} image={video.image} title={video.title} artist={video.artist} />
       ))}

@@ -6,7 +6,7 @@ import TopMVItems from "./TopMVItems";
 import styles from "./TopMV.module.scss";
 
 const TopMV = () => (
-  <div>
+  <div className={styles["top-mv-wrapper"]}>
     <TopMVHeader />
     <TopNav />
     <TopMVItems />

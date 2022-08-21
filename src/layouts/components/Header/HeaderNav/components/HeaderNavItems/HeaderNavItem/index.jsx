@@ -9,13 +9,13 @@ import HeaderSubNav from "../../HeaderSubNav";
 // another
 import styles from "./HeaderNavItem.module.scss";
 
-const HeaderNavItem = ({ key, navLink }) => {
+const HeaderNavItem = ({ navLink }) => {
   const { currentLanguage } = useContext(useLocates.LanguageContext);
   const { languages } = useLocates;
 
   return (
-    <Popover key={key} content={HeaderSubNav} placement="bottomLeft">
-      <li key={key} className={styles["header-nav-item"]}>
+    <Popover content={HeaderSubNav} placement="bottomLeft">
+      <li className={styles["header-nav-item"]}>
         <Link href={navLink.href}>
           <a className={styles["header-nav-link"]}>
             {languages[currentLanguage][navLink.titleKey]}
