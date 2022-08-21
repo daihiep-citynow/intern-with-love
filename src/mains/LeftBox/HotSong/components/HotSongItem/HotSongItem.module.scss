@@ -1,0 +1,53 @@
+.hot-song-item-wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 414px;
+  height: 70px;
+  padding: 5px 0;
+  margin-right: 16px;
+  border-top: 1px solid #ececec;
+  font-weight: 600;
+
+  .item-content {
+    flex: 1;
+    margin-left: 10px;
+
+    .item-title {
+      display: block;
+      max-width: 200px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover {
+        color: #2daaed;
+      }
+    }
+
+    .item-artist {
+      height: 24px;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 26px;
+      color: rgb(0 0 0 / 50%);
+
+      &:hover {
+        color: #2daaed;
+      }
+    }
+  }
+
+  .item-traffic {
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    margin-right: 12px;
+
+    .item-traffic-number {
+      margin-left: 3px;
+    }
+  }
+}
