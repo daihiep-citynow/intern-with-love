@@ -67,6 +67,10 @@
     "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-prettier": "^2.0.0"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "lint-staged": {
     "*.{jsx}": [
       "eslint --fix",
