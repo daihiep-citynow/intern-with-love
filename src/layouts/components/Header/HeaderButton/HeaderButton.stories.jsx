@@ -5,6 +5,4 @@ export default {
   component: HeaderButtonComponent,
 };
 
-const Template = () => <HeaderButtonComponent />;
-
-export const HeaderButton = Template.bind({});
+export const HeaderButton = <HeaderButtonComponent />;
