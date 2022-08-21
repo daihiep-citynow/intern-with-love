@@ -1,8 +1,65 @@
 .hot-video-large-item-wrapper {
+  position: relative;
   display: inline-block;
   width: 412px;
   height: 230px;
-  background-color: rgb(164 127 127);
   margin-right: 18px;
   margin-bottom: 16px;
+  cursor: pointer;
+
+  .item-traffic {
+    position: absolute;
+    right: 0;
+    display: block;
+    z-index: 1;
+    padding: 0 5px 0 15px;
+    color: #c7c7c7;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .item-duration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 4px 6px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+
+    .item-title {
+      display: box;
+      overflow: hidden;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+
+      &:hover {
+        color: #2daaed;
+      }
+    }
+
+    .item-artist {
+      font-size: 12px;
+      line-height: 12px;
+      color: #9a9a9a;
+
+      &:hover {
+        color: #2daaed;
+        font-weight: 700px !important;
+      }
+    }
+  }
 }
