@@ -11,16 +11,14 @@
     right: 0;
     display: block;
     z-index: 1;
-    padding: 0 5px 0 15px;
+    padding: 0 5px;
     color: #c7c7c7;
     font-size: 12px;
     line-height: 24px;
+    background-color: rgb(0 0 0 / 47.9%);
 
-    .item-view {
-      float: left;
-      width: 14px;
-      height: 14px;
-      margin: 8px 3px 0 0;
+    .item-traffic-number {
+      margin-left: 4px;
     }
   }
 
@@ -35,6 +33,7 @@
     color: #fff;
     font-size: 11px;
     line-height: 16px;
+    background-color: rgb(0 0 0 / 47.9%);
   }
 
   .item-title {

@@ -1,6 +1,11 @@
 .weekly-artiest-item-wrapper {
   display: inline-block;
   margin-right: 20px;
+  transition: all 0.2 ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   .item-image {
     display: block;
