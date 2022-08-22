@@ -1,17 +1,14 @@
-// hooks
-import { useApi } from "@/hooks";
+// data
+import dataSource from "@/mocks/top-mv/top-mv-items.json";
 // components
 import TopMVFirstItem from "../components/TopMVFirstItem";
 import TopMVItem from "../components/TopMVItem";
-
 // another
 import styles from "./TopMVItems.module.scss";
 
 const TopMVItems = () => {
-  const { res } = useApi("topmvs");
-
-  const firstVideo = res[0];
-  const topVideos = res.slice(1);
+  const firstVideo = dataSource[0];
+  const topVideos = dataSource.slice(1);
 
   return (
     <div className={styles["top-mv-items"]}>

@@ -1,6 +1,5 @@
-// libraries
-import { useState, useEffect } from "react";
-import axios from "axios";
+// data
+import dataSource from "@/mocks/top-songs/top-songs-items.json";
 // components
 import TopSongFirstItem from "../components/TopSongFirstItem";
 import TopSongItem from "../components/TopSongItem";
@@ -8,24 +7,8 @@ import TopSongItem from "../components/TopSongItem";
 import styles from "./TopSongItems.module.scss";
 
 const TopSongItems = () => {
-  const [firstSong, setFirstSong] = useState({});
-  const [topSongs, setTopSongs] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const options = {
-        method: "GET",
-        url: "topsongs",
-      };
-
-      const { data } = await axios(options);
-
-      setFirstSong(data[0]);
-      setTopSongs(data.slice(1));
-    };
-
-    fetchData();
-  }, []);
+  const firstSong = dataSource[0];
+  const topSongs = dataSource.slice(1);
 
   return (
     <div className={styles["top-song-items"]}>

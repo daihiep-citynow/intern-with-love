@@ -1,39 +1,13 @@
+// data
+import dataSource from "@/mocks/topic-event/third-item.json";
 // components
 import TopicEventThreeItem from "../components/TopicEventThreeItem";
 // another
 import styles from "./TopicEventThreeItems.module.scss";
 
-const mocks = [
-  {
-    id: 1,
-    title: "Kill This Love (Mini Album)",
-    src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
-  },
-  {
-    id: 2,
-    title: "The Alchemist (Mini Album) The Alchemist (Mini Album) The Alchemist (Mini Album)",
-    src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
-  },
-  {
-    id: 3,
-    title: "Pink Venom (Single)",
-    src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
-  },
-  {
-    id: 4,
-    title: "BLACKPINK 2020 THE SHOW LIVE",
-    src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
-  },
-  {
-    id: 5,
-    title: "BLACKPINK 2021 THE SHOW LIVE",
-    src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
-  },
-];
-
 const TopEventOneItems = () => (
   <div className={styles["topic-event-three-items"]}>
-    {mocks.map(({ id, src, title }) => (
+    {dataSource.map(({ id, src, title }) => (
       <TopicEventThreeItem key={id} src={src} title={title} />
     ))}
   </div>

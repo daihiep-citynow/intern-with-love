@@ -1,11 +1,14 @@
-import { useState, createContext, useMemo } from "react";
-
+// libs
+import { createContext, useMemo } from "react";
+// hooks
+import useLocalStorage from "./useLocalStorage";
+// another
 import languages from "../locates";
 
 const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useState(() => Object.keys(languages)[0] || "en");
+  const [currentLanguage, setCurrentLanguage] = useLocalStorage("lang", "vi");
 
   const value = useMemo(
     () => ({ currentLanguage, setCurrentLanguage }),
