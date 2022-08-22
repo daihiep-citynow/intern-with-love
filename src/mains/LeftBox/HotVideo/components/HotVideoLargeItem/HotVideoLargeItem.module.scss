@@ -55,14 +55,12 @@
     z-index: 1;
 
     .item-title {
-      display: box;
       overflow: hidden;
       font-size: 18px;
       font-weight: 500;
       color: #fff;
       text-overflow: ellipsis;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
+      white-space: nowrap;
 
       &:hover {
         color: #2daaed;
