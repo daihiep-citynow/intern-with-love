@@ -1,6 +1,6 @@
 import * as nextImage from "next/image";
 
-import { useLanguage } from "../src/hooks";
+import { useLocates } from "../src/hooks";
 import "antd/dist/antd.css";
 import "../src/styles/index.scss";
 
@@ -21,8 +21,8 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <useLanguage.LanguageProvider>
+    <useLocates.LanguageProvider>
       <Story />
-    </useLanguage.LanguageProvider>
+    </useLocates.LanguageProvider>
   ),
 ];
