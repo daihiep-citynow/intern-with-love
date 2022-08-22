@@ -1,10 +1,8 @@
 import FooterCooperComponent from ".";
 
 export default {
-  title: "Footer Cooper",
+  title: "Layouts/Footer/Footer Components/Footer Cooper",
   component: FooterCooperComponent,
 };
 
-const Template = () => <FooterCooperComponent />;
-
-export const FooterCooper = Template.bind({});
+export const FooterCooper = <FooterCooperComponent />;

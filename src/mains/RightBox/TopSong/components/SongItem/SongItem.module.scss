@@ -44,8 +44,11 @@
   }
 
   .top-song-item-title-artist {
-    font-size: 14px;
+    display: block;
+    width: 1px;
     font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
     color: #cda87f;
     cursor: pointer;
 
@@ -68,6 +71,7 @@
   .top-song-item-content {
     display: flex;
 
+    .top-song-item-title-artist,
     .top-song-item-title-name {
       width: 100%;
       text-overflow: ellipsis;

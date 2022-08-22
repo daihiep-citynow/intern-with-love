@@ -1,7 +1,7 @@
 import FooterWrapper from ".";
 
 export default {
-  title: "Footer",
+  title: "Layouts/Footer/Footer",
   component: FooterWrapper,
 };
 

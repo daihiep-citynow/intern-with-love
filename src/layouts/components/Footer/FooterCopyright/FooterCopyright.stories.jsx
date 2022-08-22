@@ -1,7 +1,7 @@
 import FooterCopyrightComponent from ".";
 
 export default {
-  title: "Footer Copyright",
+  title: "Layouts/Footer/Footer Components/Footer Copyright",
   component: FooterCopyrightComponent,
 };
 

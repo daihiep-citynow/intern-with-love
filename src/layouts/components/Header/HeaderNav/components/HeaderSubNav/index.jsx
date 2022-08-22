@@ -1,6 +1,8 @@
+// libs
 import { useContext } from "react";
-
+// hooks
 import { useLocates } from "@/hooks";
+// another
 import styles from "./HeaderSubNav.module.scss";
 
 export const HeaderSubNavLanguage = () => {

@@ -2,7 +2,7 @@
 import HeaderLoginComponent from ".";
 
 export default {
-  title: "Header Login",
+  title: "Layouts/Header/Header Components/Header Login/Header Login",
   component: HeaderLoginComponent,
 };
 

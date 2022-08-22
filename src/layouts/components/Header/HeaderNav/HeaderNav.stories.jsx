@@ -1,10 +1,8 @@
 import HeaderNavComponent from ".";
 
 export default {
-  title: "Header Nav",
+  title: "Layouts/Header/Header Components/Header Nav",
   component: HeaderNavComponent,
 };
 
-const Template = () => <HeaderNavComponent />;
-
-export const HeaderNav = Template.bind({});
+export const HeaderNav = <HeaderNavComponent />;

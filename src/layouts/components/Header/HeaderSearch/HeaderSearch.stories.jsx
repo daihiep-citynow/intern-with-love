@@ -1,10 +1,8 @@
 import HeaderSearchComponent from ".";
 
 export default {
-  title: "Header Search",
+  title: "Layouts/Header/Header Components/Header Search",
   component: HeaderSearchComponent,
 };
 
-const Template = () => <HeaderSearchComponent />;
-
-export const HeaderSearch = Template.bind({});
+export const HeaderSearch = <HeaderSearchComponent />;

@@ -1,7 +1,7 @@
 import HeroWrapper from ".";
 
 export default {
-  title: "Hero",
+  title: "Mains/Hero",
   component: HeroWrapper,
 };
 

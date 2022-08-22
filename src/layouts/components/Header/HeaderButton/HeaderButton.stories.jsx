@@ -1,7 +1,7 @@
 import HeaderButtonComponent from ".";
 
 export default {
-  title: "Header Button",
+  title: "Layouts/Header/Header Components/Header Button/Header Button",
   component: HeaderButtonComponent,
 };
 

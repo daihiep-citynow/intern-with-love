@@ -1,7 +1,7 @@
 import HeaderLogoComponent from ".";
 
 export default {
-  title: "Header Logo",
+  title: "Layouts/Header/Header Components/Header Logo",
   component: HeaderLogoComponent,
 };
 

@@ -1,7 +1,7 @@
 import HomeScreen from ".";
 
 export default {
-  title: "HomeView",
+  title: "Views",
   component: HomeScreen,
 };
 

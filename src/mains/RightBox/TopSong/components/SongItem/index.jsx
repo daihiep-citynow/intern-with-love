@@ -13,7 +13,9 @@ const SongItem = ({ songType = false, index, title, artist }) => (
       <div className={styles["top-song-item-index"]}>
         <span>{index || 1}</span>
       </div>
-      {songType && <TopSongImage />}
+      {songType && (
+        <TopSongImage src="https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" />
+      )}
       <div className={styles["top-song-item-title"]}>
         <span className={styles["top-song-item-title-name"]}>{title}</span>
         <span className={styles["top-song-item-title-artist"]}>{artist}</span>
