@@ -1,6 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb", "eslint:recommended", "plugin:react/recommended"],
-  "plugins": ["prettier", "import", "react", "prefer-arrow"],
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": ["prettier", "import", "react", "prefer-arrow", "cypress"],
   "rules": {
     "prettier/prettier": [
       "error",

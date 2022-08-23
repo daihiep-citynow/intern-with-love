@@ -16,7 +16,8 @@
     "homepage": "http://daihiep-citynow.github.io/intern-with-love",
     "predeploy": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -40,11 +41,13 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/stylelint": "^14.0.0",
     "babel-loader": "^8.2.5",
+    "cypress": "^10.6.0",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-next": "12.2.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",
