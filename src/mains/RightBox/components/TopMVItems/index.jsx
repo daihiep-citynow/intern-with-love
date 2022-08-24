@@ -1,8 +1,8 @@
 // data
 import dataSource from "@/mocks/top-mv/top-mv-items.json";
 // components
-import TopMVFirstItem from "../components/TopMVFirstItem";
-import TopMVItem from "../components/TopMVItem";
+import TopMVFirstItem from "../TopMVFirstItem";
+import TopMVItem from "../TopMVItem";
 // another
 import styles from "./TopMVItems.module.scss";
 

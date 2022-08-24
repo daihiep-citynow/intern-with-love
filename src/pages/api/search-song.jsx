@@ -6,7 +6,11 @@ const getCarouselList = (req, res) => {
         { id: 1, title: "The Sound of Silence", artist: "Simon & Garfunkel" },
         { id: 2, title: "The Boxer", artist: "Simon & Garfunkel" },
         { id: 3, title: "Scarborough Fair", artist: "Simon & Garfunkel" },
-        { id: 4, title: "Bridge Over Troubled Water", artist: "Simon & Garfunkel" },
+        {
+          id: 4,
+          title: "Bridge Over Troubled Water",
+          artist: "Simon & Garfunkel",
+        },
       ],
     });
   }

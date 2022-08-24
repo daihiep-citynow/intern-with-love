@@ -1,5 +1,5 @@
 // dataSource
-import navLinks from "@/dataSources/header-nav/header-nav-item";
+import navLinks from "@/dataSources/header-nav";
 // components
 import HeaderNavItem from "../HeaderNavItem";
 // another

@@ -13,14 +13,13 @@
     width: 152px;
 
     .song-card-title {
-      display: box;
       overflow: hidden;
       width: 152px;
+      line-height: 18px;
       font-size: 14px;
       font-weight: 500;
       text-overflow: ellipsis;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      white-space: pre;
     }
 
     .song-card-artist {

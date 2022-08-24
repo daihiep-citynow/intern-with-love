@@ -1,7 +1,7 @@
 // data
 import dataSources from "@/mocks/hot-topics/hot-topics-items.json";
 // components
-import HotTopicsItem from "../components/HotTopicsItem";
+import HotTopicsItem from "../HotTopicsItem";
 
 const Items = () => (
   <>

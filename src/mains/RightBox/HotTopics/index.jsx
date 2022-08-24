@@ -1,6 +1,6 @@
 // components
-import HotTopicsHeader from "./HotTopicsHeader";
-import HotTopItems from "./HotTopicsItems";
+import HotTopicsHeader from "../components/HotTopicsHeader";
+import HotTopItems from "../components/HotTopicsItems";
 // anther
 import styles from "./HotTopics.module.scss";
 

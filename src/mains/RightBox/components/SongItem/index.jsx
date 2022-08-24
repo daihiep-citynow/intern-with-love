@@ -7,7 +7,9 @@ import styles from "./SongItem.module.scss";
 
 const SongItem = ({ songType = false, index, title, artist }) => (
   <div
-    className={classnames(styles["top-song-item"], { [styles["top-song-first-item"]]: songType })}
+    className={classnames(styles["top-song-item"], {
+      [styles["top-song-first-item"]]: songType,
+    })}
   >
     <div className={styles["top-song-item-content"]}>
       <div className={styles["top-song-item-index"]}>

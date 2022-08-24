@@ -8,4 +8,6 @@ export default {
 const Template = (args) => <TopMVImageComponent {...args} />;
 
 export const TopMVImage = Template.bind({});
-TopMVImage.args = { src: "https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" };
+TopMVImage.args = {
+  src: "https://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg",
+};

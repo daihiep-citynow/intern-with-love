@@ -56,6 +56,7 @@
 
     .item-title {
       overflow: hidden;
+      width: 398px;
       font-size: 18px;
       font-weight: 500;
       color: #fff;
@@ -68,9 +69,13 @@
     }
 
     .item-artist {
+      overflow: hidden;
+      width: 348px;
       font-size: 12px;
       line-height: 12px;
       color: #9a9a9a;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 
       &:hover {
         color: #2daaed;

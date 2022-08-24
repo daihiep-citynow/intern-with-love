@@ -1,7 +1,7 @@
 // components
-import TopMVHeader from "./TopMVHeader";
+import TopMVHeader from "../components/TopMVHeader";
 import TopNav from "../components/TopNav";
-import TopMVItems from "./TopMVItems";
+import TopMVItems from "../components/TopMVItems";
 // another
 import styles from "./TopMV.module.scss";
 

@@ -3,7 +3,7 @@ import { useContext } from "react";
 import Link from "next/link";
 import { Popover } from "antd";
 // dataSource
-import data from "@/dataSources/header-nav/header-nav-item";
+import data from "@/dataSources/header-nav";
 // hooks
 import { useLocales } from "@/hooks";
 // components

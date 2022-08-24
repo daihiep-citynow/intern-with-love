@@ -6,7 +6,11 @@ import TopMVImage from "../TopMVImage";
 import styles from "./MVItem.module.scss";
 
 const MVItem = ({ mvType = false, title, artist, image }) => (
-  <div className={classnames(styles["top-mv-item"], { [styles["top-mv-first-item"]]: mvType })}>
+  <div
+    className={classnames(styles["top-mv-item"], {
+      [styles["top-mv-first-item"]]: mvType,
+    })}
+  >
     <div className={styles["top-mv-item-content"]}>
       {mvType ? (
         <>

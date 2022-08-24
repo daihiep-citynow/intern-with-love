@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "homepage": "http://daihiep-citynow.github.io/intern-with-love",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,8 +13,8 @@
     "prettier:check": "prettier --config .prettierrc.json --check .",
     "prepare": "husky install",
     "stylelint": "npx stylelint \"**/*.scss\" --fix",
+    "stylelint:check": "stylelint-config-prettier-scss-check",
     "storybook": "start-storybook -p 6006",
-    "homepage": "http://daihiep-citynow.github.io/intern-with-love",
     "predeploy": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
@@ -23,6 +24,7 @@
     "@tippyjs/react": "^4.2.6",
     "antd": "^4.22.4",
     "axios": "^0.27.2",
+    "mongoose": "^6.5.2",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -55,17 +57,17 @@
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "normalize.css": "^8.0.1",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "storybook-addon-next": "^1.6.7",
     "storybook-react-context": "^0.6.0",
-    "stylelint": "^14.10.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-recommended": "^8.0.0",
     "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-prettier": "^2.0.0"
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
   },
   "browserslist": [
     "> 1%",

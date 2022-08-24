@@ -1,8 +1,8 @@
 // data
 import dataSource from "@/mocks/top-songs/top-songs-items.json";
 // components
-import TopSongFirstItem from "../components/TopSongFirstItem";
-import TopSongItem from "../components/TopSongItem";
+import TopSongFirstItem from "../TopSongFirstItem";
+import TopSongItem from "../TopSongItem";
 // another
 import styles from "./TopSongItems.module.scss";
 
