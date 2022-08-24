@@ -1,6 +1,6 @@
 // components
-import WeeklyArtistHeader from "./WeeklyArtistHeader";
-import WeeklyArtistItems from "./WeeklyArtistItems";
+import WeeklyArtistHeader from "../components/WeeklyArtistHeader";
+import WeeklyArtistItems from "../components/WeeklyArtistItems";
 
 const WeeklyArtist = () => (
   <div>

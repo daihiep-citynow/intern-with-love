@@ -1,8 +1,8 @@
 // components
-import TopEventOne from "./TopicEventOne";
-import TopicEventTwo from "./TopicEventTwo";
-import TopEventThree from "./TopicEventThree";
-import TopEventFor from "./TopicEventFor";
+import TopEventOne from "../components/TopicEventOne";
+import TopicEventTwo from "../components/TopicEventTwo";
+import TopEventThree from "../components/TopicEventThree";
+import TopEventFor from "../components/TopicEventFor";
 
 const TopEvent = () => (
   <div>

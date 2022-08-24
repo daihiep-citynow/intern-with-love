@@ -1,6 +1,6 @@
 // components
-import HotVideoPlayHeader from "./HotVideoPlayHeader";
-import HotVideoItems from "./HotVideoItems";
+import HotVideoPlayHeader from "../components/HotVideoPlayHeader";
+import HotVideoItems from "../components/HotVideoItems";
 
 const HotVideo = () => (
   <div>

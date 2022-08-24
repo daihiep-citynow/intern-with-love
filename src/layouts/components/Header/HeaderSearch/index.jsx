@@ -37,12 +37,12 @@ const HeaderSearch = () => {
       setLoading(true);
       const options = {
         method: "GET",
-        url: "songs",
+        url: "api/search-song",
       };
 
       const { data } = await axios(options);
 
-      setSearchResult(data);
+      setSearchResult(data.data);
       setLoading(false);
     };
 
