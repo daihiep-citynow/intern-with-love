@@ -73,12 +73,12 @@
     "last 2 versions"
   ],
   "lint-staged": {
-    "*.{jsx}": [
+    "*.{jsx, js}": [
       "eslint --fix",
       "npx prettier --write .",
       "git add ."
     ],
-    "*.{scss}": [
+    "*.scss": [
       "npx stylelint --fix",
       "git add ."
     ]
