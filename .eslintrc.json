@@ -3,9 +3,12 @@
     "next/core-web-vitals",
     "airbnb",
     "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": ["prettier", "import", "react", "prefer-arrow", "cypress"],
     "plugin:react/recommended"
   ],
-  "plugins": ["prettier", "import", "react", "prefer-arrow"],
   "rules": {
     "prettier/prettier": [
       "error",
