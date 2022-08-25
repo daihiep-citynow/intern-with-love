@@ -1,6 +1,6 @@
 // components
-import HotAlbumHeader from "./HotAlbumHeader";
-import HotAlbumItems from "./HotAlbumItems";
+import HotAlbumHeader from "../components/HotAlbumHeader";
+import HotAlbumItems from "../components/HotAlbumItems";
 
 const HotAlbum = () => (
   <div>

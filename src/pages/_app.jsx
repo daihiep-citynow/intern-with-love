@@ -1,19 +1,21 @@
-// libraries
-import axios from "axios";
-
+// libs
+import Head from "next/head";
 // hooks
-import { useLocates } from "../hooks";
+import { useLocales } from "../hooks";
 
 // another
 import "../styles/index.scss";
 import "antd/dist/antd.css";
 
-axios.defaults.baseURL = "https://intern-with-love.daihiep.co/";
-
 const MyApp = ({ Component, pageProps }) => (
-  <useLocates.LanguageProvider>
-    <Component {...pageProps} />
-  </useLocates.LanguageProvider>
+  <>
+    <Head>
+      <title>Code vui vẻ!</title>
+    </Head>
+    <useLocales.LanguageProvider>
+      <Component {...pageProps} />
+    </useLocales.LanguageProvider>
+  </>
 );
 
 export default MyApp;

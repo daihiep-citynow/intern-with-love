@@ -1,6 +1,6 @@
 // libraries
-import UploadButton from "./UploadButton";
-import HomeButton from "./HomeButton";
+import UploadButton from "../components/UploadButton";
+import HomeButton from "../components/HomeButton";
 // another
 import styles from "./HeaderButton.module.scss";
 

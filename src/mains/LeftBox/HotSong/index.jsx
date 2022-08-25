@@ -1,6 +1,6 @@
 // components
-import HotSongsPlayHeader from "./HotSongPlayHeader";
-import HotSongItems from "./HotSongItems";
+import HotSongsPlayHeader from "../components/HotSongPlayHeader";
+import HotSongItems from "../components/HotSongItems";
 
 const HotSongs = () => (
   <div>

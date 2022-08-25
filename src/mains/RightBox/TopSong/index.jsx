@@ -1,7 +1,7 @@
 // components
-import TopSongHeader from "./TopSongHeader";
+import TopSongHeader from "../components/TopSongHeader";
 import TopNav from "../components/TopNav";
-import TopSongItems from "./TopSongItems";
+import TopSongItems from "../components/TopSongItems";
 // another
 import styles from "./TopSong.module.scss";
 

@@ -1,5 +1,5 @@
 // components
-import HeaderNavItems from "./components/HeaderNavItems";
+import HeaderNavItems from "../components/HeaderNavItems";
 // another
 import styles from "./HeaderNav.module.scss";
 

@@ -1,6 +1,6 @@
 // component
-import SignInButton from "./SignInButton";
-import SignUpButton from "./SignUpButton";
+import SignInButton from "../components/SignInButton";
+import SignUpButton from "../components/SignUpButton";
 // another
 import styles from "./HeaderLogin.module.scss";
 
