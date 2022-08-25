@@ -5,15 +5,14 @@ import { Popover } from "antd";
 // dataSource
 import data from "@/dataSources/header-nav";
 // hooks
-import { useLocales } from "@/hooks";
+import { LanguageContext, languages } from "@/hooks/useLocales";
 // components
 import HeaderSubNav from "../HeaderSubNav";
 // another
 import styles from "./HeaderNavItem.module.scss";
 
 const HeaderNavItem = ({ index }) => {
-  const { currentLanguage } = useContext(useLocales.LanguageContext);
-  const { languages } = useLocales;
+  const { currentLanguage } = useContext(LanguageContext);
 
   return (
     <Popover content={HeaderSubNav} placement="bottomLeft">
