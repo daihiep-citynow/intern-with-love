@@ -7,14 +7,14 @@ import styles from "./VideoItem.module.scss";
 
 const VideoItem = ({ VideoType = false, title, artist, image }) => (
   <div
-    className={classnames(styles["top-Video-item"], {
-      [styles["top-Video-first-item"]]: VideoType,
+    className={classnames(styles["top-video-item"], {
+      [styles["top-video-first-item"]]: VideoType,
     })}
   >
-    <div className={styles["top-Video-item-content"]}>
+    <div className={styles["top-video-item-content"]}>
       {VideoType ? (
         <>
-          <div className={styles["top-Video-item-index"]}>
+          <div className={styles["top-video-item-index"]}>
             <span>1</span>
           </div>
           <TopVideoImage src={image} width={300} height={168} />
@@ -22,9 +22,9 @@ const VideoItem = ({ VideoType = false, title, artist, image }) => (
       ) : (
         <TopVideoImage src={image} width={110} height={62} />
       )}
-      <div className={styles["top-Video-item-title"]}>
-        <span className={styles["top-Video-item-title-name"]}>{title}</span>
-        <span className={styles["top-Video-item-title-artist"]}>{artist}</span>
+      <div className={styles["top-video-item-title"]}>
+        <span className={styles["top-video-item-title-name"]}>{title}</span>
+        <span className={styles["top-video-item-title-artist"]}>{artist}</span>
       </div>
     </div>
   </div>

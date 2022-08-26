@@ -1,5 +1,5 @@
-// data
-import dataSource from "@/mocks/hot-videos/hot-videos-items.json";
+// libs
+import { useSelector } from "react-redux";
 // components
 import HotVideoLargeItem from "../HotVideoLargeItem";
 import HotVideoItem from "../HotVideoItem";
@@ -7,30 +7,14 @@ import HotVideoItem from "../HotVideoItem";
 import styles from "./HotVideoItems.module.scss";
 
 const HotVideoItems = () => {
-  const largeVideos = dataSource.slice(0, 2);
-  const videos = dataSource.slice(2);
+  const hotVideo = useSelector((state) => state.hotVideo.list.slice(2));
 
   return (
     <div className={styles["hot-video-items"]}>
-      {largeVideos.map(({ id, title, src, artist, traffic, duration }) => (
-        <HotVideoLargeItem
-          key={id}
-          title={title}
-          src={src}
-          artist={artist}
-          traffic={traffic}
-          duration={duration}
-        />
-      ))}
-      {videos.map(({ id, title, src, artist, traffic, duration }) => (
-        <HotVideoItem
-          key={id}
-          title={title}
-          src={src}
-          artist={artist}
-          traffic={traffic}
-          duration={duration}
-        />
+      <HotVideoLargeItem index={0} />
+      <HotVideoLargeItem index={1} />
+      {hotVideo.map(({ id }, index) => (
+        <HotVideoItem key={id} index={index} />
       ))}
     </div>
   );

@@ -1,16 +1,20 @@
-// data
-import dataSource from "@/mocks/topic-event/first-items";
+// libs
+import { useSelector } from "react-redux";
 // components
 import TopicEventFirstItem from "../TopicEventFirstItem";
 // another
 import styles from "./TopicEventFirstItems.module.scss";
 
-const TopEventFirstItems = () => (
-  <div className={styles["topic-event-one-items"]}>
-    {dataSource.map(({ id, src, title }) => (
-      <TopicEventFirstItem key={id} src={src} title={title} />
-    ))}
-  </div>
-);
+const TopicEventFirstItems = () => {
+  const topicEventFirst = useSelector((state) => state.topicEventFirst.list);
 
-export default TopEventFirstItems;
+  return (
+    <div className={styles["topic-event-one-items"]}>
+      {topicEventFirst.map((item, index) => (
+        <TopicEventFirstItem key={item.id} index={index} />
+      ))}
+    </div>
+  );
+};
+
+export default TopicEventFirstItems;

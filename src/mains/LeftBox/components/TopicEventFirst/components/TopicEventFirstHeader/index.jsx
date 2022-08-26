@@ -1,5 +1,5 @@
 // components
-import CustomTopicEventHeader from "../../../CustomTopicEventHeader";
+import CustomTopicEventHeader from "@/mains/LeftBox/components/CustomTopicEventHeader";
 
 const TopicEventFirstHeader = () => <CustomTopicEventHeader text="BLACKPINK tái xuất" />;
 

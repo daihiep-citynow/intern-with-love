@@ -1,6 +1,17 @@
+// libs
+import { useSelector } from "react-redux";
 // components
 import CustomTopicEventSongCard from "../../../CustomTopicEventSongCard";
 
-const TopicEventTwoItem = ({ src, title }) => <CustomTopicEventSongCard src={src} title={title} />;
+const TopicEventSecondItem = ({ index }) => {
+  const topicEventSecond = useSelector((state) => state.topicEventSecond.list);
 
-export default TopicEventTwoItem;
+  return (
+    <CustomTopicEventSongCard
+      src={topicEventSecond[index].image}
+      title={topicEventSecond[index].title}
+    />
+  );
+};
+
+export default TopicEventSecondItem;

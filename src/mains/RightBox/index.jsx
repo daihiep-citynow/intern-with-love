@@ -2,7 +2,7 @@
 import TopSong from "./TopSong";
 import TopVideo from "./TopVideo";
 import PlayNow from "./PlayNow";
-import HotTopics from "./HotTopics";
+import HotTopics from "./HotTopic";
 
 const RightBox = () => (
   <div className="right-wrapper">

@@ -1,16 +1,20 @@
-// data
-import dataSource from "@/mocks/topic-event/four-items";
+// libs
+import { useSelector } from "react-redux";
 // components
 import TopicEventFourItem from "../TopicEventFourItem";
 // another
 import styles from "./TopicEventFourItems.module.scss";
 
-const TopEventFourItems = () => (
-  <div className={styles["topic-event-for-items"]}>
-    {dataSource.map(({ id, src, title, artist }) => (
-      <TopicEventFourItem key={id} src={src} title={title} artist={artist} />
-    ))}
-  </div>
-);
+const TopEventFourItems = () => {
+  const topicEventFour = useSelector((state) => state.topicEventFour.list);
+
+  return (
+    <div className={styles["topic-event-four-items"]}>
+      {topicEventFour.map(({ id }, index) => (
+        <TopicEventFourItem key={id} index={index} />
+      ))}
+    </div>
+  );
+};
 
 export default TopEventFourItems;

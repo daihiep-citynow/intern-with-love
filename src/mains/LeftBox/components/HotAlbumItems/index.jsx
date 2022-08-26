@@ -1,16 +1,20 @@
-// data
-import dataSource from "@/mocks/hot-album/hot-album-items.json";
+// libs
+import { useSelector } from "react-redux";
 // components
 import HotAlbumItem from "../HotAlbumItem";
 // another
 import styles from "./HotAlbumItems.module.scss";
 
-const HotAlbumItems = () => (
-  <div className={styles["hot-album-items-wrapper"]}>
-    {dataSource.map(({ id, src }) => (
-      <HotAlbumItem key={id} src={src} />
-    ))}
-  </div>
-);
+const HotAlbumItems = () => {
+  const hotAlbum = useSelector((state) => state.hotAlbum.list);
+
+  return (
+    <div className={styles["hot-album-items-wrapper"]}>
+      {hotAlbum.map(({ id }, index) => (
+        <HotAlbumItem key={id} index={index} />
+      ))}
+    </div>
+  );
+};
 
 export default HotAlbumItems;

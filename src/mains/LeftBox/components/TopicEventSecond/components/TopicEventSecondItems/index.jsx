@@ -1,16 +1,20 @@
-// data
-import dataSource from "@/mocks/topic-event/second-items";
+// libs
+import { useSelector } from "react-redux";
 // components
 import TopicEventSecondItem from "../TopicEventSecondItem";
 // another
 import styles from "./TopicEventSecondItems.module.scss";
 
-const TopicEventSecondItems = () => (
-  <div className={styles["topic-event-second-items"]}>
-    {dataSource.map(({ id, src, title }) => (
-      <TopicEventSecondItem key={id} src={src} title={title} />
-    ))}
-  </div>
-);
+const TopicEventSecondItems = () => {
+  const topicEventSecond = useSelector((state) => state.topicEventSecond.list);
+
+  return (
+    <div className={styles["topic-event-second-items"]}>
+      {topicEventSecond.map((item, index) => (
+        <TopicEventSecondItem key={item.id} index={index} />
+      ))}
+    </div>
+  );
+};
 
 export default TopicEventSecondItems;
