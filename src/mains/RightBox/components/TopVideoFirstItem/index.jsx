@@ -6,8 +6,6 @@ import VideoItem from "../VideoItem";
 const TopVideoFirstItem = () => {
   const firstVideo = useSelector((state) => state.topVideo.list[0]);
 
-  console.log(firstVideo);
-
   return (
     <VideoItem
       VideoType="first"
