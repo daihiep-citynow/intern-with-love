@@ -1,5 +1,5 @@
-// data
-import dataSource from "@/mocks/top-songs/top-songs-items.json";
+// libs
+import { useSelector } from "react-redux";
 // components
 import TopSongFirstItem from "../TopSongFirstItem";
 import TopSongItem from "../TopSongItem";
@@ -7,14 +7,13 @@ import TopSongItem from "../TopSongItem";
 import styles from "./TopSongItems.module.scss";
 
 const TopSongItems = () => {
-  const firstSong = dataSource[0];
-  const topSongs = dataSource.slice(1);
+  const topSong = useSelector((state) => state.topSong.list.slice(1));
 
   return (
     <div className={styles["top-song-items"]}>
-      <TopSongFirstItem title={firstSong.title} artist={firstSong.artist} />
-      {topSongs.map((song, index) => (
-        <TopSongItem key={song.id} index={index + 2} title={song.title} artist={song.artist} />
+      <TopSongFirstItem />
+      {topSong.map((song, index) => (
+        <TopSongItem key={song.id} index={index + 1} />
       ))}
     </div>
   );

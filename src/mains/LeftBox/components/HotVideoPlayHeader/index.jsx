@@ -1,6 +1,6 @@
 // components
 import CustomPlayHeader from "../CustomPlayHeader";
 
-const HotVideoPlayHeader = () => <CustomPlayHeader text="mv hot" />;
+const HotVideoPlayHeader = () => <CustomPlayHeader text="Video hot" />;
 
 export default HotVideoPlayHeader;

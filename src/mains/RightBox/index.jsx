@@ -1,13 +1,13 @@
 // components
 import TopSong from "./TopSong";
-import TopMV from "./TopMV";
+import TopVideo from "./TopVideo";
 import PlayNow from "./PlayNow";
 import HotTopics from "./HotTopics";
 
 const RightBox = () => (
   <div className="right-wrapper">
     <TopSong />
-    <TopMV />
+    <TopVideo />
     <PlayNow />
     <HotTopics />
   </div>

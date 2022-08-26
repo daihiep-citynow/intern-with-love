@@ -1,5 +1,5 @@
 // data
-import dataSource from "@/mocks/hot-songs/hot-songs-items.json";
+import dataSource from "@/mocks/hot-songs";
 // components
 import HotSongItem from "../HotSongItem";
 // another

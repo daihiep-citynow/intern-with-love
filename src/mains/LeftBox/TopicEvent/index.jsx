@@ -1,13 +1,13 @@
 // components
-import TopEventOne from "../components/TopicEventOne";
-import TopicEventTwo from "../components/TopicEventTwo";
-import TopEventThree from "../components/TopicEventThree";
-import TopEventFor from "../components/TopicEventFor";
+import TopEventFirst from "../components/TopicEventFirst";
+import TopicEventSecond from "../components/TopicEventSecond";
+import TopEventThree from "../components/TopicEventThird";
+import TopEventFor from "../components/TopicEventFour";
 
 const TopEvent = () => (
   <div>
-    <TopEventOne />
-    <TopicEventTwo />
+    <TopEventFirst />
+    <TopicEventSecond />
     <TopEventThree />
     <TopEventFor />
   </div>
