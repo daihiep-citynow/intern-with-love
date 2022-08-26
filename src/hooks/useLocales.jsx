@@ -3,11 +3,11 @@ import { createContext, useMemo } from "react";
 // hooks
 import useLocalStorage from "./useLocalStorage";
 // another
-import languages from "../locales";
+import locales from "../locales";
 
-const LanguageContext = createContext();
+export const LanguageContext = createContext();
 
-const LanguageProvider = ({ children }) => {
+export const LanguageProvider = ({ children }) => {
   const [currentLanguage, setCurrentLanguage] = useLocalStorage("lang", "vi");
 
   const value = useMemo(
@@ -18,9 +18,5 @@ const LanguageProvider = ({ children }) => {
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 };
 
-export default {
-  LanguageContext,
-  LanguageProvider,
-  languages,
-  languagesList: Object.keys(languages),
-};
+export const languages = locales;
+export const languagesList = Object.keys(languages);

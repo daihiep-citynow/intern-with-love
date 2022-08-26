@@ -1,6 +1,6 @@
 // components
 import MainLayout from "@/layouts/MainLayout";
-import Hero from "@/mains/Hero";
+import Hero from "@/mains/Carousel";
 import RightBox from "@/mains/RightBox";
 import LeftBox from "@/mains/LeftBox";
 

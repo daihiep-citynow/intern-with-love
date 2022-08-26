@@ -7,8 +7,6 @@
     "plugin:cypress/recommended"
   ],
   "plugins": ["prettier", "import", "react", "prefer-arrow", "cypress"],
-    "plugin:react/recommended"
-  ],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -34,7 +32,7 @@
       }
     ],
     "object-curly-newline": "off",
-    "react/jsx-filename-extension": ["off", { "extensions": ["jsx, js"] }], // turn off checking for jsx files
+    "react/jsx-filename-extension": ["off", { "extensions": ["jsx"] }], // turn off checking for jsx files
     "react/react-in-jsx-scope": "off", // turn off for now
     "react/jsx-props-no-spreading": "off",
     "import/newline-after-import": "warn", // turn on errors for missing imports
@@ -49,7 +47,8 @@
         "specialLink": ["hrefLeft", "hrefRight"],
         "aspects": ["invalidHref", "preferButton"]
       }
-    ]
+    ],
+    "default-param-last": ["off"]
   },
   "settings": {
     "import/resolver": {
