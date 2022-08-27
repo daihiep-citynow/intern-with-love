@@ -10,7 +10,7 @@ const Template = (args) => <HotVideoItemComponent {...args} />;
 export const HotVideoItem = Template.bind({});
 HotVideoItem.args = {
   title: "Kill This Love (Mini Album)",
-  src: "https://avatar-ex-swe.nixcdn.com/Video/2022/07/04/d/1/5/5/1656903740420_268.jpg",
+  src: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-song/1661506338944_300.jpg",
   artist: "MONO, Onionn",
   traffic: 12312,
   duration: "2:23",

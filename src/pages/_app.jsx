@@ -1,13 +1,13 @@
 // libs
-import { Provider } from "react-redux";
 import Head from "next/head";
+import { Provider } from "react-redux";
 // store
 import store from "@/stores";
 // hooks
 import { LanguageProvider } from "../hooks/useLocales";
 // another
-import "../styles/index.scss";
 import "antd/dist/antd.css";
+import "../styles/index.scss";
 
 const MyApp = ({ Component, pageProps }) => (
   <>

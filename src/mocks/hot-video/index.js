@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: "Kill This Love (Mini Album)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/06/13/9/5/5/b/1655100723598_640.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1650677273413_640.jpg",
     artist: "MONO, Onionn",
     traffic: 12312,
     duration: "2:23",
@@ -10,7 +10,7 @@ export default [
   {
     id: 2,
     title: "The Alchemist (Mini Album) The Alchemist (Mini Album) The Alchemist (Mini Album)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/07/07/7/f/c/9/1657183063791_640.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1656595887062_268.jpg",
     artist: "Jack - J97",
     traffic: 12312,
     duration: "4:32",
@@ -18,7 +18,7 @@ export default [
   {
     id: 3,
     title: "Pink Venom (Single)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/07/04/d/1/5/5/1656903740420_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1658203627249_640.jpg",
     artist: "Panic! at the Disco",
     traffic: 12312,
     duration: "3:54",
@@ -26,7 +26,7 @@ export default [
   {
     id: 4,
     title: "BLACKPINK 2020 THE SHOW LIVE",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/05/23/8/b/b/b/1653292109610_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1658720924375_268.jpg",
     artist: "Bella Poarch",
     traffic: 12312,
     duration: "5:23",
@@ -34,7 +34,7 @@ export default [
   {
     id: 5,
     title: "BLACKPINK 2021 THE SHOW LIVE",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1659535653519_268.jpg",
     artist: "Sean, Tweny",
     traffic: 12312,
     duration: "3:23",
@@ -42,7 +42,7 @@ export default [
   {
     id: 6,
     title: "Kill This Love (Mini Album)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1660624419287_268.jpg",
     artist: "MONO, Onionn",
     traffic: 12312,
     duration: "7:53",
@@ -50,7 +50,7 @@ export default [
   {
     id: 7,
     title: "The Alchemist (Mini Album) The Alchemist (Mini Album) The Alchemist (Mini Album)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1660894891027_268.jpg",
     artist: "Jack - J97",
     traffic: 12312,
     duration: "7:53",
@@ -58,7 +58,7 @@ export default [
   {
     id: 8,
     title: "Pink Venom (Single)",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1661227983709_268.jpg",
     artist: "Panic! at the Disco",
     traffic: 12312,
     duration: "7:53",
@@ -66,7 +66,7 @@ export default [
   {
     id: 9,
     title: "BLACKPINK 2020 THE SHOW LIVE",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1661251130188_268.jpg",
     artist: "Bella Poarch",
     traffic: 12312,
     duration: "7:53",
@@ -74,7 +74,7 @@ export default [
   {
     id: 10,
     title: "BLACKPINK 2021 THE SHOW LIVE",
-    image: "https://avatar-ex-swe.nixcdn.com/mv/2022/04/23/a/a/1/d/1650677273413_268.jpg",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-video/1661497899449_268.jpg",
     artist: "Sean, Tweny",
     traffic: 12312,
     duration: "7:53",

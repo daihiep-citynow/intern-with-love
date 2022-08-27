@@ -9,7 +9,7 @@ const Template = (args) => <CustomTopicEventSongCardComponent {...args} />;
 
 export const CustomTopicEventSongCard = Template.bind({});
 CustomTopicEventSongCard.args = {
-  src: "https://avatar-ex-swe.nixcdn.com/playlist/2020/06/09/4/0/2/6/1591694185737_300.jpg",
+  src: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-song/1661506338944_300.jpg",
   title: "mua dong khong lanh",
   artist: "asdad",
 };

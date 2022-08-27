@@ -1,6 +1,6 @@
 // components
 import TopSongHeader from "../components/TopSongHeader";
-import TopNav from "../components/TopNav";
+import TopSongNav from "../components/TopSongNav";
 import TopSongItems from "../components/TopSongItems";
 // another
 import styles from "./TopSong.module.scss";
@@ -8,7 +8,7 @@ import styles from "./TopSong.module.scss";
 const TopSong = () => (
   <div className={styles["top-song-wrapper"]}>
     <TopSongHeader />
-    <TopNav />
+    <TopSongNav />
     <TopSongItems />
   </div>
 );

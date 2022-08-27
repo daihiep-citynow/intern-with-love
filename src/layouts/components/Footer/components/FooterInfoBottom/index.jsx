@@ -6,7 +6,7 @@ const FooterInfoBottom = () => (
   <div className={styles["footer-info-bottom"]}>
     <div className={styles["footer-info-logo"]}>
       <Image
-        src="https://stc-id.nixcdn.com/v11/images/footer/t_logo_company.png"
+        src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_logo_company.png"
         height="80px"
         width="96px"
         objectFit="contain"
@@ -28,7 +28,7 @@ const FooterInfoBottom = () => (
     </div>
     <div className={styles["footer-info-notify"]}>
       <Image
-        src="https://stc-id.nixcdn.com/v11/images/footer/t_bo_cong_thuong.png"
+        src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_bo_cong_thuong.png"
         height="80px"
         width="160px"
         objectFit="contain"
@@ -36,7 +36,7 @@ const FooterInfoBottom = () => (
     </div>
     <div>
       <Image
-        src="https://stc-id.nixcdn.com/v11/images/footer/t_dmca.png"
+        src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_dmca.png"
         height="80px"
         width="140px"
         objectFit="contain"

@@ -13,6 +13,7 @@ import hotVideoReducer from "./hot-video";
 import hotSongReducer from "./hot-song";
 import hotAlbumReducer from "./hot-album";
 import weeklyArtistReducer from "./weekly-artist";
+import cooperReducer from "./cooper";
 
 const rootReducer = combineReducers({
   carousel: carouselReducer,
@@ -27,6 +28,7 @@ const rootReducer = combineReducers({
   hotSong: hotSongReducer,
   hotAlbum: hotAlbumReducer,
   weeklyArtist: weeklyArtistReducer,
+  cooper: cooperReducer,
 });
 
 export default rootReducer;

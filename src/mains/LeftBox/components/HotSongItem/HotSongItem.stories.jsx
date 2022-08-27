@@ -11,6 +11,6 @@ export const HotSongItem = Template.bind({});
 HotSongItem.args = {
   title: "Million Dollar Boy",
   artist: "16 Typh",
-  src: "https://avatar-ex-swe.nixcdn.com/song/2022/08/16/f/3/3/4/1660617737344.jpg",
+  src: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-song/1661506338944_300.jpg",
   traffic: 1233,
 };

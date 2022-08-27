@@ -2,7 +2,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["stc-id.nixcdn.com", "avatar-ex-swe.nixcdn.com", "lokeshdhakar.com"],
+    domains: ["intern-with-love.sgp1.digitaloceanspaces.com"],
   },
 };
 

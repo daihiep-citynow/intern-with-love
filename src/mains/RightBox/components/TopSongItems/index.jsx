@@ -7,14 +7,16 @@ import TopSongItem from "../TopSongItem";
 import styles from "./TopSongItems.module.scss";
 
 const TopSongItems = () => {
-  const topSong = useSelector((state) => state.topSong.list.slice(1));
+  const topSong = useSelector((state) => state.topSong.list);
 
   return (
     <div className={styles["top-song-items"]}>
-      <TopSongFirstItem />
-      {topSong.map((song, index) => (
-        <TopSongItem key={song.id} index={index + 1} />
-      ))}
+      {topSong.map(({ id }, index) => {
+        if (index) {
+          return <TopSongItem key={id} index={index} />;
+        }
+        return <TopSongFirstItem key={id} />;
+      })}
     </div>
   );
 };

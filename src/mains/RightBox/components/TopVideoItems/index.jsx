@@ -7,14 +7,16 @@ import TopVideoItem from "../TopVideoItem";
 import styles from "./TopVideoItems.module.scss";
 
 const TopVideoItems = () => {
-  const topVideo = useSelector((state) => state.topVideo.list.slice(1));
+  const topVideo = useSelector((state) => state.topVideo.list);
 
   return (
     <div className={styles["top-video-items"]}>
-      <TopVideoFirstItem />
-      {topVideo.map((video, index) => (
-        <TopVideoItem key={video.id} index={index + 1} />
-      ))}
+      {topVideo.map(({ id }, index) => {
+        if (index) {
+          return <TopVideoItem key={id} index={index} />;
+        }
+        return <TopVideoFirstItem key={id} />;
+      })}
     </div>
   );
 };

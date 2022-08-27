@@ -1,5 +1,7 @@
+import { Provider } from "react-redux";
 import * as nextImage from "next/image";
 
+import store from "@/stores";
 import { LanguageProvider } from "../src/hooks/useLocales";
 import "antd/dist/antd.css";
 import "../src/styles/index.scss";
@@ -21,8 +23,10 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <LanguageProvider>
-      <Story />
-    </LanguageProvider>
+    <Provider store={store}>
+      <LanguageProvider>
+        <Story />
+      </LanguageProvider>
+    </Provider>
   ),
 ];

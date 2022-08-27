@@ -9,6 +9,6 @@ const Template = (args) => <WeeklyArtistItemComponent {...args} />;
 
 export const WeeklyArtistItem = Template.bind({});
 WeeklyArtistItem.args = {
-  src: "https://avatar-ex-swe.nixcdn.com/singer/avatar/2022/03/22/2/2/c/b/1647915878760_600.jpg",
+  src: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-song/1661506338944_300.jpg",
   artist: "TAC",
 };

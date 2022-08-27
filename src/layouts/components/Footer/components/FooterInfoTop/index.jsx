@@ -46,17 +46,17 @@ const FooterInfoTop = () => (
       </div>
       <div className={styles["footer-info-top-logos"]}>
         <Image
-          src="https://stc-id.nixcdn.com/v11/images/footer/t_google_play.png"
+          src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_google_play.png"
           height="32px"
           width="108px"
         />
         <Image
-          src="https://stc-id.nixcdn.com/v11/images/footer/t_app_store.png"
+          src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_app_store.png"
           height="32px"
           width="108px"
         />
         <Image
-          src="https://stc-id.nixcdn.com/v11/images/footer/t_appgallery.png"
+          src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_appgallery.png"
           height="32px"
           width="108px"
         />

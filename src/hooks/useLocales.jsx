@@ -20,3 +20,10 @@ export const LanguageProvider = ({ children }) => {
 
 export const languages = locales;
 export const languagesList = Object.keys(languages);
+
+export default {
+  LanguageContext,
+  LanguageProvider,
+  languages,
+  languagesList,
+};

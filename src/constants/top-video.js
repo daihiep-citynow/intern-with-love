@@ -1,8 +1,8 @@
-export const VIETNAMESE_VIDEO = 1;
+export const VIETNAMESE_VIDEO = "VIETNAMESE_VIDEO";
 
-export const AMERICAN_VIDEO = 2;
+export const AMERICAN_VIDEO = "AMERICAN_VIDEO";
 
-export const KOREAN_VIDEO = 3;
+export const KOREAN_VIDEO = "KOREAN_VIDEO";
 
 export default {
   VIETNAMESE_VIDEO,

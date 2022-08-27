@@ -7,7 +7,7 @@ const HeaderLogo = () => (
   <div className={styles["header-logo-wrapper"]}>
     <ImageLink
       href="/"
-      src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png"
+      src="https://intern-with-love.sgp1.digitaloceanspaces.com/logo.png"
       width="64"
       height="32"
     />

@@ -1,8 +1,8 @@
-export const VIETNAMESE_SONG = 1;
+export const VIETNAMESE_SONG = "VIETNAMESE_SONG";
 
-export const AMERICAN_SONG = 2;
+export const AMERICAN_SONG = "AMERICAN_SONG";
 
-export const KOREAN_SONG = 3;
+export const KOREAN_SONG = "KOREAN_SONG";
 
 export default {
   VIETNAMESE_SONG,

@@ -4,15 +4,9 @@ import { useSelector } from "react-redux";
 import VideoItem from "../VideoItem";
 
 const TopVideoItem = ({ index }) => {
-  const topVideo = useSelector((state) => state.topVideo.list);
+  const { image, title, artist } = useSelector((state) => state.topVideo.list[index]);
 
-  return (
-    <VideoItem
-      image={topVideo[index].image}
-      title={topVideo[index].title}
-      artist={topVideo[index].artist}
-    />
-  );
+  return <VideoItem image={image} title={title} artist={artist} />;
 };
 
 export default TopVideoItem;
