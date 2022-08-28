@@ -1,5 +1,6 @@
 # Intern with Love
 
+```bash
 +---public
 \---src
     +---actions
@@ -143,3 +144,4 @@
     \---views
         +---HomeScreen
         \---SettingScreen
+```
