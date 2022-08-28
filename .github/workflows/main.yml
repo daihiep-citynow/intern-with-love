@@ -20,6 +20,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: development
-          FOLDER: storybook-static
+          FOLDER: docs-build
           CLEAN: true
           TARGET_FOLDER: docs
