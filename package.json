@@ -14,10 +14,9 @@
     "prepare": "husky install",
     "stylelint": "npx stylelint \"**/*.scss\" --fix",
     "stylelint:check": "stylelint-config-prettier-scss-check",
-    "storybook": "start-storybook -p 6006",
-    "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static",
-    "build-storybook": "build-storybook",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:gh": "gh-pages -d storybook-static",
+    "storybook:build": "build-storybook",
     "cypress": "cypress open",
     "jest": "jest"
   },
