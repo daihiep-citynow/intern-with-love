@@ -4,7 +4,7 @@ on:
     branches:
       - dev
 jobs:
-  build-and-deploy:
+  build-and-deploy-storybook:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,9 +15,8 @@ jobs:
         run: |
           npm install
           npm run storybook-build
-          npm run test
       - name: Test
-        run: npm run test
+        run: npm run jest
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
