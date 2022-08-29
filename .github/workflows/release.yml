@@ -9,6 +9,13 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: rymndhng/release-on-push-action@dev
+      - id: release
+        uses: rymndhng/release-on-push-action@master
         with:
           bump_version_scheme: minor
+          tag_prefix: v
+          max_commits: 20
+      - name: Check Output Parameters
+        run: |
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
