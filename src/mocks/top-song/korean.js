@@ -1,19 +1,19 @@
 export default [
   {
     id: 1,
-    title: "Vì Anh Đâu Có Biết Korean",
-    artist: "Madihu, Vũ",
-    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/top-song/1655371095601.jpg",
+    title: "Pink Venom",
+    artist: "BlackPink",
+    image: "https://intern-with-love.sgp1.digitaloceanspaces.com/hot-song/1659514753058_300.jpg",
   },
   {
     id: 2,
-    title: "Vì Mẹ Anh Bắt Chia Tay",
-    artist: "Châu Đăng Khoa",
+    title: "Attention",
+    artist: "NewJeans",
   },
   {
     id: 3,
-    title: "Bên Trên Tầng Lầu",
-    artist: "Tăng Duy Tân",
+    title: "Ready For Love",
+    artist: "BlackPink",
   },
   {
     id: 4,
