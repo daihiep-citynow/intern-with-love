@@ -1,8 +1,11 @@
+// libs
 import { Provider } from "react-redux";
 import * as nextImage from "next/image";
-
+// redux
 import store from "@/stores";
+// hooks
 import { LanguageProvider } from "../src/hooks/useLocales";
+// another
 import "antd/dist/antd.css";
 import "../src/styles/index.scss";
 
