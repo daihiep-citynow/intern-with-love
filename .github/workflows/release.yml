@@ -14,7 +14,7 @@ jobs:
       - id: release
         uses: rymndhng/release-on-push-action@master
         with:
-          bump_version_scheme: patch
+          default_bump: patch
           tag_prefix: v
           max_commits: 20
       - name: Check Output Parameters
