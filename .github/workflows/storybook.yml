@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Storybook
 on:
   push:
     branches:
@@ -12,7 +12,12 @@ jobs:
         with:
           persist-credentials: false
       - name: Install and Build
-        run: npm install && npm run storybook-build
+        run: |
+          npm install
+          npm run storybook-build
+          npm run test
+      - name: Test
+        run: npm run test
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
