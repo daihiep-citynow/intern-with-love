@@ -3,7 +3,7 @@ import SettingLayout from "@/layouts/SettingLayout";
 
 const SettingScreen = () => (
   <SettingLayout>
-    <span> </span>
+    <span />
   </SettingLayout>
 );
 
