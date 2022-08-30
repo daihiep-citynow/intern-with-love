@@ -15,8 +15,7 @@
     "prettier/prettier": [
       true,
       {
-        "singleQuote": false,
-        "trailingComma": "all"
+        "singleQuote": false
       }
     ],
     "comment-empty-line-before": "always",
