@@ -1,6 +1,16 @@
 {
-  "plugins": ["stylelint-prettier", "stylelint-scss"],
-  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-recommended"
+  ],
+  "files": [
+    "**/*.scss"
+  ],
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-scss"
+  ],
   "rules": {
     "prettier/prettier": [
       true,
@@ -22,7 +32,9 @@
     "selector-pseudo-class-no-unknown": [
       true,
       {
-        "ignorePseudoClasses": ["global"]
+        "ignorePseudoClasses": [
+          "global"
+        ]
       }
     ],
     "no-descending-specificity": null
