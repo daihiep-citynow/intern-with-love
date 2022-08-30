@@ -6,5 +6,4 @@ const SettingScreen = () => (
     <span />
   </SettingLayout>
 );
-
 export default SettingScreen;
