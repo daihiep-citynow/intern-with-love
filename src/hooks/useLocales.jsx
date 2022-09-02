@@ -5,25 +5,20 @@ import useLocalStorage from "./useLocalStorage";
 // another
 import locales from "../locales";
 
-export const LanguageContext = createContext();
+export const LocalesContext = createContext();
 
-export const LanguageProvider = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useLocalStorage("lang", "vi");
+export const LocalesProvider = ({ children }) => {
+  const [local, setLocal] = useLocalStorage("lang", "vi");
 
-  const value = useMemo(
-    () => ({ currentLanguage, setCurrentLanguage }),
-    [currentLanguage, setCurrentLanguage],
-  );
+  const value = useMemo(() => ({ languages: locales[local], setLocal }), [local, setLocal]);
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+  return <LocalesContext.Provider value={value}>{children}</LocalesContext.Provider>;
 };
 
-export const languages = locales;
-export const languagesList = Object.keys(languages);
+export const localesList = Object.keys(locales);
 
 export default {
-  LanguageContext,
-  LanguageProvider,
-  languages,
-  languagesList,
+  LocalesContext,
+  LocalesProvider,
+  localesList,
 };

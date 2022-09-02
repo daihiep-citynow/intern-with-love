@@ -2,20 +2,20 @@
 import { useContext } from "react";
 // hooks
 
-import { LanguageContext, languagesList } from "@/hooks/useLocales";
+import { LocalesContext, localesList } from "@/hooks/useLocales";
 // another
 import styles from "./HeaderSubNav.module.scss";
 
 export const HeaderSubNavLanguage = () => {
-  const { setCurrentLanguage } = useContext(LanguageContext);
+  const { setLocal } = useContext(LocalesContext);
 
   const handleChangeLanguage = (language) => {
-    setCurrentLanguage(language);
+    setLocal(language);
   };
 
   return (
     <div>
-      {languagesList.map((languageKey) => (
+      {localesList.map((languageKey) => (
         <div
           className={styles["header-sub-nav-language-item"]}
           key={languageKey}

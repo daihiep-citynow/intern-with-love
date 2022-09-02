@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 // store
 import store from "@/stores";
 // hooks
-import { LanguageProvider } from "../hooks/useLocales";
+import { LocalesProvider } from "../hooks/useLocales";
 // another
 import "antd/dist/antd.css";
 import "../styles/index.scss";
@@ -15,9 +15,9 @@ const MyApp = ({ Component, pageProps }) => (
       <title>Code vui vẻ!</title>
     </Head>
     <Provider store={store}>
-      <LanguageProvider>
+      <LocalesProvider>
         <Component {...pageProps} />
-      </LanguageProvider>
+      </LocalesProvider>
     </Provider>
   </>
 );

@@ -1,6 +1,6 @@
 {
   "name": "intern-with-love",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "license": "MIT",
   "homepage": "http://daihiep-citynow.github.io/intern-with-love",
@@ -18,7 +18,8 @@
     "storybook:gh": "gh-pages -d storybook-static",
     "storybook-build": "build-storybook -o docs-build",
     "cypress": "cypress open",
-    "jest": "jest"
+    "jest": "jest",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -75,6 +76,7 @@
     "prettier": "^2.7.1",
     "react-test-renderer": "^18.2.0",
     "sass": "^1.54.4",
+    "semantic-release": "^19.0.5",
     "storybook-addon-next": "^1.6.7",
     "storybook-react-context": "^0.6.0",
     "stylelint": "^14.11.0",
@@ -97,5 +99,9 @@
       "npx stylelint --fix",
       "git add ."
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daihiep-citynow/intern-with-love.git"
   }
 }

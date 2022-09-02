@@ -1,10 +1,11 @@
-import { useRef, useState, useEffect } from "react";
+// libs
+import { useRef, useState, useEffect, useCallback } from "react";
 import { SearchOutlined, LoadingOutlined, CloseCircleOutlined } from "@ant-design/icons";
 import HeadlessTippy from "@tippyjs/react/headless";
 import axios from "axios";
-
+// hooks
 import { useDebounce } from "@/hooks";
-
+// others
 import styles from "./HeaderSearch.module.scss";
 
 const HeaderSearch = () => {
@@ -27,24 +28,24 @@ const HeaderSearch = () => {
     setShowResult(false);
   };
 
+  const fetchData = useCallback(async () => {
+    setLoading(true);
+    const options = {
+      method: "GET",
+      url: "api/search-song",
+    };
+
+    const { data } = await axios(options);
+
+    setSearchResult(data.data);
+    setLoading(false);
+  }, []);
+
   useEffect(() => {
     if (!debounced.trim()) {
       setSearchResult([]);
       return;
     }
-
-    const fetchData = async () => {
-      setLoading(true);
-      const options = {
-        method: "GET",
-        url: "api/search-song",
-      };
-
-      const { data } = await axios(options);
-
-      setSearchResult(data.data);
-      setLoading(false);
-    };
 
     fetchData();
 
