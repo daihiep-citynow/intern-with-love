@@ -18,7 +18,5 @@ export const LocalesProvider = ({ children }) => {
 export const localesList = Object.keys(locales);
 
 export default {
-  LocalesContext,
   LocalesProvider,
-  localesList,
 };
