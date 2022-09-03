@@ -1,9 +1,13 @@
 /* ECP: https://docs.google.com/spreadsheets/d/1vSd0tqcu37J_VnGNFWBo539Jf81KG7oTs-XC5LR0MCg/edit?usp=sharing */
+// libs
+import { describe, expect, test, beforeAll } from "@jest/globals";
 import { renderHook } from "@testing-library/react";
 // hooks
 import useLocalStorage from "@/hooks/useLocalStorage";
 
 describe("useLocalStorage", () => {
+  beforeAll(() => window.localStorage.clear());
+
   test("data no existing", () => {
     // arrange
     const key = "lang";

@@ -14,7 +14,7 @@ const FooterCooper = () => {
         <div className={styles["footer-cooper-title"]}>LIÊN KẾT VÀ HỢP TÁC</div>
         <div className={styles["footer-cooper-items"]}>
           {cooperList.map(({ id, image }) => (
-            <CooperImage key={id} image={image} />
+            <CooperImage key={id} src={image} />
           ))}
         </div>
       </div>
