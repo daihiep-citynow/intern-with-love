@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 import SongItem from "../SongItem";
 
 const TopSongItem = ({ index }) => {
-  const { title, artist } = useSelector((state) => state.topSong.list[index]);
+  const { title, artist, slug } = useSelector((state) => state.topSong.list[index]);
 
-  return <SongItem index={index + 1} title={title} artist={artist} />;
+  return <SongItem index={index + 1} title={title} artist={artist} href={slug} />;
 };
 
 export default TopSongItem;

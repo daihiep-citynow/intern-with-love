@@ -14,13 +14,12 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - id: release
-        uses: rymndhng/release-on-push-action@master
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          bump_version_scheme: patch
-          tag_prefix: v
-          max_commits: 20
-      - name: Check Output Parameters
-        run: |
-          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
-          echo "Got release version ${{ steps.release.outputs.version }}"
+          node-version: "12"
+      - run: npm i
+      - name: Release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
