@@ -20,6 +20,6 @@ module.exports = defineConfig({
       return config;
     },
     baseUrl: "http://localhost:3000",
-    specPattern: "./cypress/**/*.{feature, mjs}",
+    specPattern: "./cypress/**/*.feature",
   },
 });
