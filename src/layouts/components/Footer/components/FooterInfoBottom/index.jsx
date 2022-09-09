@@ -10,6 +10,7 @@ const FooterInfoBottom = () => (
         height="80px"
         width="96px"
         objectFit="contain"
+        placeholder="blur"
       />
     </div>
     <div className={styles["footer-info-text"]}>
@@ -32,6 +33,7 @@ const FooterInfoBottom = () => (
         height="80px"
         width="160px"
         objectFit="contain"
+        placeholder="blur"
       />
     </div>
     <div>
@@ -40,6 +42,7 @@ const FooterInfoBottom = () => (
         height="80px"
         width="140px"
         objectFit="contain"
+        placeholder="blur"
       />
     </div>
   </div>

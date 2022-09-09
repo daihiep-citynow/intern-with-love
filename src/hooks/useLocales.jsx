@@ -5,9 +5,9 @@ import useLocalStorage from "./useLocalStorage";
 // another
 import locales from "../locales";
 
-export const LocalesContext = createContext();
+const LocalesContext = createContext();
 
-export const LocalesProvider = ({ children }) => {
+const LocalesProvider = ({ children }) => {
   const [local, setLocal] = useLocalStorage("lang", "vi");
 
   const value = useMemo(() => ({ languages: locales[local], setLocal }), [local, setLocal]);
@@ -15,7 +15,7 @@ export const LocalesProvider = ({ children }) => {
   return <LocalesContext.Provider value={value}>{children}</LocalesContext.Provider>;
 };
 
-export const localesList = Object.keys(locales);
+const localesList = Object.keys(locales);
 
 export default {
   LocalesContext,

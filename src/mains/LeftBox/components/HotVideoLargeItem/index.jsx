@@ -14,7 +14,13 @@ const HotVideoLargeItem = ({ index }) => {
         <CustomerServiceOutlined />
         <span className={styles["item-traffic-number"]}>{videos[index].traffic}</span>
       </div>
-      <Image src={videos[index].image} width={412} height={230} objectFit="cover" />
+      <Image
+        src={videos[index].image}
+        width={412}
+        height={230}
+        objectFit="cover"
+        placeholder="blur"
+      />
       <div className={styles["item-content"]}>
         <div className={styles["item-title"]}>{videos[index].title}</div>
         <div className={styles["item-artist"]}>{videos[index].artist}</div>

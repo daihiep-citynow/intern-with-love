@@ -49,16 +49,19 @@ const FooterInfoTop = () => (
           src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_google_play.png"
           height="32px"
           width="108px"
+          placeholder="blur"
         />
         <Image
           src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_app_store.png"
           height="32px"
           width="108px"
+          placeholder="blur"
         />
         <Image
           src="https://intern-with-love.sgp1.digitaloceanspaces.com/t_appgallery.png"
           height="32px"
           width="108px"
+          placeholder="blur"
         />
       </div>
     </div>

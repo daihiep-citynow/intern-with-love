@@ -11,7 +11,13 @@ const HotSongItem = ({ index }) => {
 
   return (
     <div className={styles["hot-song-item-wrapper"]}>
-      <Image src={hotSong[index].image} width={60} height={60} objectFit="cover" />
+      <Image
+        src={hotSong[index].image}
+        width={60}
+        height={60}
+        objectFit="cover"
+        placeholder="blur"
+      />
       <div className={styles["item-content"]}>
         <span className={styles["item-title"]}>{hotSong[index].title}</span>
         <span className={styles["item-artist"]}>{hotSong[index].artist}</span>
